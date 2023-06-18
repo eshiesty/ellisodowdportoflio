@@ -1,0 +1,8 @@
+.header {
+  font-size: 88pt;
+  color: #fffde7;
+}
+.header-holder {
+  /* background-color: red; */
+  flex-direction: row;
+}
