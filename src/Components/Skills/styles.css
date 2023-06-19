@@ -1,5 +1,5 @@
 .skills-zone {
-  height: 90vh;
+  height: 100vh;
   background-color: #191919;
 }
 .skills-content-area {
@@ -36,6 +36,7 @@
   border-radius: 20px;
   overflow: hidden;
   transition: height 1s;
+  border-bottom: 5px solid #171717;
 }
 .skills-dropdown-opened {
   width: 500px;
@@ -44,6 +45,7 @@
   border-radius: 20px;
   overflow: hidden;
   transition: height 1s;
+  border-bottom: 5px solid #171717;
 }
 .skill-holder {
   display: flex;
@@ -66,4 +68,20 @@
   height: 100%;
   font-size: 20pt;
   justify-content: space-between;
+}
+.visible {
+  transition: translate 1s ease;
+}
+.off-screen {
+  translate: 100%;
+  transition: translate 1s ease;
+}
+@media (max-width: 780px) {
+  .skills-dropdown-holder {
+    display: flex;
+    flex-direction: column;
+
+    /* width: 90%; */
+    /* justify-content: space-between; */
+  }
 }
