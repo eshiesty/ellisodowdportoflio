@@ -23,7 +23,7 @@ const Links = () => {
   return (
     <div className="links-zone">
       <div className="links-content">
-        <h2 className="sub-header">Links</h2>
+        <h2 className="sub-header mobile-sub-header">Links</h2>
         <div
           className={`link-card-slideshow ${
             scrollPosition > 1200 ? "visible" : "off-screen"

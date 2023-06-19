@@ -36,7 +36,7 @@ const Skills = () => {
           <div
             className={
               scrollPosition / window.innerHeight <
-                (window.innerHeight > 2000 ? 0.03 : 0.8) || rightDropDownOpen
+                (window.innerWidth > 600 ? 0.03 : 0.8) || rightDropDownOpen
                 ? "skills-dropdown-closed"
                 : "skills-dropdown-opened"
             }
@@ -74,7 +74,7 @@ const Skills = () => {
           <div
             className={
               scrollPosition / window.innerHeight <
-                (window.innerHeight > 2000 ? 0.03 : 0.8) || rightDropDownOpen
+                (window.innerWidth > 600 ? 0.03 : 0.8) || rightDropDownOpen
                 ? "skills-dropdown-closed"
                 : "skills-dropdown-opened"
             }

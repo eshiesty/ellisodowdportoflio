@@ -96,7 +96,7 @@
   }
   .skills-dropdown-opened {
     width: 90vw;
-    height: 600px;
+    height: 475px;
     background-color: #282828;
     border-radius: 20px;
     overflow: hidden;
@@ -113,5 +113,13 @@
     background-color: #191919;
     display: flex;
     justify-content: center;
+  }
+  .skill-holder {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+  }
+  .skill-name-column {
+    font-size: 12pt;
   }
 }
