@@ -3,6 +3,7 @@ import "./styles.css";
 import GithubLogo from "../../Assets/Github.png";
 import LinkedInLogo from "../../Assets/LinkedIn.png";
 import InstagramLogo from "../../Assets/Instagram.png";
+import GmailLogo from "../../Assets/Gmail.png";
 const Links = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
@@ -51,12 +52,12 @@ const Links = () => {
           </a>
           <a
             target="_blank"
-            href={"https://www.instagram.com/ellisodowd"}
+            href={"mailto:ellisodowd@gmail.com"}
             className="link-card"
           >
             <div className="top-color" />
-            <img src={InstagramLogo} width={175} />
-            <p className="link-text">Instagram</p>
+            <img src={GmailLogo} width={250} />
+            <p className="link-text email-text">ellisodowd@gmail.com</p>
           </a>
         </div>
       </div>

@@ -84,4 +84,34 @@
     /* width: 90%; */
     /* justify-content: space-between; */
   }
+  .skills-dropdown-closed {
+    width: 90vw;
+    height: 100px;
+    background-color: #282828;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: height 1s;
+    border-bottom: 5px solid #171717;
+    margin-top: 30px;
+  }
+  .skills-dropdown-opened {
+    width: 90vw;
+    height: 600px;
+    background-color: #282828;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: height 1s;
+    border-bottom: 5px solid #171717;
+    margin-top: 30px;
+  }
+  .skills-content-area {
+    /* padding-top: 100px; */
+    margin-left: 0px;
+  }
+  .skills-zone {
+    height: 200vh;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+  }
 }

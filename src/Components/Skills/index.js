@@ -22,7 +22,7 @@ const Skills = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
-
+    console.log(window.innerHeight);
     return () => {
       window.removeEventListener("scroll", handleScroll);
       console.log(scrollPosition);
@@ -35,7 +35,8 @@ const Skills = () => {
         <div className="skills-dropdown-holder">
           <div
             className={
-              scrollPosition / window.innerHeight < 0.8 || leftDropDownOpen
+              scrollPosition / window.innerHeight <
+                (window.innerHeight > 2000 ? 0.03 : 0.8) || rightDropDownOpen
                 ? "skills-dropdown-closed"
                 : "skills-dropdown-opened"
             }
@@ -72,7 +73,8 @@ const Skills = () => {
           </div>
           <div
             className={
-              scrollPosition / window.innerHeight < 0.8 || rightDropDownOpen
+              scrollPosition / window.innerHeight <
+                (window.innerHeight > 2000 ? 0.03 : 0.8) || rightDropDownOpen
                 ? "skills-dropdown-closed"
                 : "skills-dropdown-opened"
             }
