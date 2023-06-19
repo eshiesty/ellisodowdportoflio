@@ -38,7 +38,7 @@ const Links = () => {
             className="link-card"
           >
             <div className="top-color" />
-            <img src={GithubLogo} width={175} />
+            <img className="link-image" src={GithubLogo} width={175} />
             <p className="link-text">Github</p>
           </a>
           <a
@@ -47,7 +47,7 @@ const Links = () => {
             className="link-card"
           >
             <div className="top-color" />
-            <img src={LinkedInLogo} width={175} />
+            <img className="link-image" src={LinkedInLogo} width={175} />
             <p className="link-text">LinkedIn</p>
           </a>
           <a
@@ -56,7 +56,7 @@ const Links = () => {
             className="link-card"
           >
             <div className="top-color" />
-            <img src={GmailLogo} width={250} />
+            <img className="link-image gmail" src={GmailLogo} width={250} />
             <p className="link-text email-text">ellisodowd@gmail.com</p>
           </a>
         </div>

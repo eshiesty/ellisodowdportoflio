@@ -41,18 +41,18 @@
 @media (max-width: 780px) {
   .link-card-slideshow {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     align-items: center;
     /* background-color: red; */
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .links-content {
     margin-left: 0px;
   }
   .link-card {
-    height: 350px;
-    width: 275px;
+    height: 150px;
+    width: 110px;
     border-radius: 20px;
     background-color: #282828;
     display: flex;
@@ -64,12 +64,25 @@
     margin-left: 0px;
     margin-right: 0px;
   }
-  .links-zone {
-    height: 150vh;
-  }
+
   .mobile-sub-header {
     font-size: 42pt;
     color: #fffde7;
     margin-left: 30px;
+  }
+  .link-image {
+    width: 50px;
+  }
+  .gmail {
+    width: 70px;
+  }
+  .link-text {
+    color: white;
+    font-size: 10pt;
+    text-decoration: underline;
+  }
+  .email-text {
+    font-size: 6pt;
+    margin-bottom: 15px;
   }
 }
