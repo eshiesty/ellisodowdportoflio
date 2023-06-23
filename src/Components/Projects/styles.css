@@ -1,0 +1,71 @@
+.skill-name-holder-grid {
+  grid-column: 2;
+  grid-row-start: 3;
+
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16pt;
+  align-items: flex-start;
+  /* align-self: flex-start; */
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 6fr;
+  grid-template-rows: repeat(8, 100px);
+}
+.skill-name-grid {
+  margin: 0px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+.project-content-area {
+  /* display: flex;
+  flex-direction: column; */
+}
+.project-area {
+  display: flex;
+  flex-direction: column;
+}
+.logo-column-grid {
+  grid-row-start: 3;
+  grid-column: 1/2;
+}
+.project-header-holder {
+  grid-column: 0/2;
+  grid-row: 0/1;
+  display: flex;
+  justify-content: space-between;
+  /* margin-left: 300px; */
+}
+.project-name-and-photo {
+  display: flex;
+  align-items: center;
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  align-self: center;
+}
+.project-name {
+  text-decoration: underline;
+  font-size: 20pt;
+  margin-left: 20px;
+}
+.project-description {
+  font-size: 20pt;
+  grid-column: 3;
+  align-self: center;
+}
+.yolkify {
+  color: #e2a747;
+}
+.project-area {
+  height: 400px;
+}
+.skill-holder-grid {
+  grid-column: 1;
+  grid-row: 3;
+}
+@media (max-width: 780px) {
+}
