@@ -1,5 +1,6 @@
 .skills-zone {
   height: 100vh;
+  min-height: 740px;
   background-color: #191919;
 }
 .skills-content-area {
@@ -26,26 +27,28 @@
 .skills-dropdown-holder {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 60%;
   justify-content: space-between;
 }
 .skills-dropdown-closed {
-  width: 500px;
-  height: 100px;
+  width: 350px;
+  height: 120px;
   background-color: #282828;
   border-radius: 20px;
   overflow: hidden;
   transition: height 1s;
   border-bottom: 5px solid #171717;
+  margin-right: 20px;
 }
 .skills-dropdown-opened {
-  width: 500px;
-  height: 600px;
+  width: 350px;
+  height: 620px;
   background-color: #282828;
   border-radius: 20px;
   overflow: hidden;
   transition: height 1s;
   border-bottom: 5px solid #171717;
+  margin-right: 20px;
 }
 .skill-holder {
   display: flex;
@@ -69,13 +72,7 @@
   font-size: 20pt;
   justify-content: space-between;
 }
-.visible {
-  transition: translate 1s ease;
-}
-.off-screen {
-  translate: 100%;
-  transition: translate 1s ease;
-}
+
 @media (max-width: 780px) {
   .skills-dropdown-holder {
     display: flex;
@@ -106,10 +103,12 @@
   }
   .skills-content-area {
     /* padding-top: 100px; */
+    /* height: 100vh; */
     margin-left: 0px;
   }
   .skills-zone {
-    height: 200vh;
+    min-height: 1200px;
+    /* height: 200vh; */
     background-color: #191919;
     display: flex;
     justify-content: center;

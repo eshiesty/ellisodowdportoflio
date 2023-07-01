@@ -10,6 +10,7 @@ import JavaLogo from "../../Assets/Java.png";
 import MongoDBLogo from "../../Assets/MongoDB.png";
 import RealmLogo from "../../Assets/Realm.png";
 import ExpressJSLogo from "../../Assets/ExpressJS.png";
+
 const Skills = () => {
   const [leftDropDownOpen, setLeftDropDownOpen] = useState(false);
   const [rightDropDownOpen, setRightDropDownOpen] = useState(false);
@@ -36,11 +37,12 @@ const Skills = () => {
           <div
             className={
               scrollPosition / window.innerHeight <
-                (window.innerWidth > 600 ? 0.03 : 0.8) || rightDropDownOpen
+                (window.innerWidth > 600 ? 0.5 : 0.8) || rightDropDownOpen
                 ? "skills-dropdown-closed"
                 : "skills-dropdown-opened"
             }
           >
+            <div className="top-color" />
             <div className="dropdown-title-holder">
               <p>Front end</p>
             </div>
@@ -74,11 +76,12 @@ const Skills = () => {
           <div
             className={
               scrollPosition / window.innerHeight <
-                (window.innerWidth > 600 ? 0.03 : 0.8) || rightDropDownOpen
+                (window.innerWidth > 600 ? 0.5 : 0.8) || rightDropDownOpen
                 ? "skills-dropdown-closed"
                 : "skills-dropdown-opened"
             }
           >
+            <div className="top-color" />
             <div className="dropdown-title-holder">
               <p>Back end</p>
             </div>
