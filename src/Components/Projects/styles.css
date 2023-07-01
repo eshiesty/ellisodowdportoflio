@@ -74,6 +74,7 @@
 
 .skill-name-grid {
   margin: 0px;
+  margin-left: 15px;
   height: 100px;
   align-items: center;
   display: flex;
@@ -111,6 +112,8 @@
   grid-row: 1;
   grid-column: 2;
   display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
   /* align-self: flex-start; */
 }
 .project-photo {
@@ -128,7 +131,7 @@
 .project-description {
   /* font-size: 20pt; */
   grid-area: 1/ 4/ 1/ 6;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   align-self: center;
 }
 .description-yolk-web {

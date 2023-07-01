@@ -19,6 +19,7 @@ import YolkifyWeb from "../../Assets/YolkifyWeb.png";
 import MintervalLanding from "../../Assets/MintervalLanding.png";
 import MintervalProfile from "../../Assets/MintervalProfile.png";
 import mintervalclock from "../../Assets/mintervalclock.png";
+import Clock from "../Clock";
 const Projects = () => {
   const [leftDropDownOpen, setLeftDropDownOpen] = useState(false);
   const [rightDropDownOpen, setRightDropDownOpen] = useState(false);
@@ -146,7 +147,9 @@ const Projects = () => {
           <div />
           {/* <div className="project-header-holder"> */}
           <div className="project-photo">
-            <img width={60} height={60} src={mintervalclock} />
+            <Clock isLoading={false} />
+
+            {/* <img width={60} height={60} src={mintervalclock} /> */}
           </div>
           <div className="project-name yolkify">
             <a href="https://www.minterval.com">
