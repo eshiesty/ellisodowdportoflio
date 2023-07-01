@@ -196,8 +196,8 @@ const Projects = () => {
             <p className="skill-name-grid">ExpressJS</p>
           </div>
           <div id="minterval-ss-column">
-            <img id="yolkify-web-ss" src={MintervalLanding} />
-            <img id="yolkify-web-ss" src={MintervalProfile} />
+            <img className="minterval-ss" src={MintervalLanding} />
+            <img className="minterval-ss" src={MintervalProfile} />
           </div>
         </div>
       </div>
