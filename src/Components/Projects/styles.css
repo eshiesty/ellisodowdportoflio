@@ -67,7 +67,7 @@
   width: 100%;
 }
 #minterval-ss-column {
-  grid-area: 2/ 3/ 5/ 5;
+  grid-area: 2/ 3/ 4/ 5;
   border-radius: 5px;
   width: 100%;
 }
@@ -157,8 +157,8 @@
   grid-column: 1;
   grid-row: 3;
 }
-#minterval-ss {
-  grid-area: 4/ 4/ 4/ 5;
+.minterval-ss {
+  /* grid-area: 4/ 4/ 4/ 5; */
   border-radius: 5px;
   width: 100%;
 }
