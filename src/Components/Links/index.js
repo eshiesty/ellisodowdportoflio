@@ -56,7 +56,7 @@ const Links = () => {
             className="link-card"
           >
             <div className="top-color" />
-            <img className="link-image gmail" src={GmailLogo} width={145} />
+            <img className="link-image gmail" src={GmailLogo} width={100} />
             <p className="link-text email-text">ellisodowd@gmail.com</p>
           </a>
         </div>
