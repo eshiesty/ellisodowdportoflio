@@ -32,6 +32,7 @@
 }
 .skills-dropdown-closed {
   width: 350px;
+  min-width: 320px;
   height: 120px;
   background-color: #282828;
   border-radius: 20px;
@@ -42,6 +43,7 @@
 }
 .skills-dropdown-opened {
   width: 350px;
+  min-width: 320px;
   height: 620px;
   background-color: #282828;
   border-radius: 20px;
