@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
+import { HiOutlineChevronDoubleDown } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
+import TopNavBar from "../TopNavBar";
 const Landing = () => {
   let titleArray = [
     "Mobile developer",
@@ -9,7 +12,7 @@ const Landing = () => {
     "Freelancer",
     "Web developer",
   ];
-
+  const navigate = useNavigate();
   const [title, setTitle] = useState(titleArray[5]);
   const [titleIndex, setTitleIndex] = useState(0);
   const [writing, setWriting] = useState(false);
@@ -54,18 +57,24 @@ const Landing = () => {
   }, [title, deleting]);
 
   return (
-    <div className="landing-zone">
-      <div className="cover-text-holder">
-        <div className="header-holder">
-          <h1 className="header">{title}</h1>
-          <p className="text-cursor">I</p>
-        </div>
+    <>
+      <div className="landing-zone">
+        <TopNavBar />
+        <div className="cover-text-holder">
+          <div className="header-holder">
+            <h1 className="header">{title}</h1>
+            <p className="text-cursor">I</p>
+          </div>
 
-        <div className="name-holder">
-          <h2 className="name">Ellis O'Dowd</h2>
+          <div className="name-holder">
+            <h2 className="name">Ellis O'Dowd</h2>
+          </div>
         </div>
       </div>
-    </div>
+      <div id="down-arrows-holder">
+        <HiOutlineChevronDoubleDown id="down-arrows" size={45} />
+      </div>
+    </>
   );
 };
 
