@@ -13,10 +13,39 @@
   padding: 30px;
   border-radius: 20px;
   border-radius: 20px;
-  border: 20px solid #e2a747;
-  border-bottom-width: 0px;
+  /* border: 20px solid #e2a747; */
+  /* border-bottom-width: 0px;
   border-left-width: 0px;
-  border-right-width: 0px;
+  border-right-width: 0px; */
+  animation: movingShadow1 5s infinite ease;
+  /* animation: movingShadow1 10s infinite ease; */
+}
+
+@keyframes movingShadow1 {
+  from {
+    box-shadow: 0px 0px 0px -1px #e2a747;
+  }
+  50% {
+    box-shadow: 0px 0px 0px 10px #e2a747;
+  }
+  to {
+    box-shadow: 0px 0px 0px -1px #e2a747;
+  }
+  /* from {
+    box-shadow: -11px -3px 20px 20px #101010;
+  }
+  25% {
+    box-shadow: 10px 0px 20px 20px #101010;
+  }
+  50% {
+    box-shadow: -2px -13px 20px 30px #101010;
+  }
+  75% {
+    box-shadow: 4px 12px 20px 20px #101010;
+  }
+  100% {
+    box-shadow: -11px -3px 20px 20px #101010;
+  } */
 }
 .yolkify-web-grid {
   display: grid;
