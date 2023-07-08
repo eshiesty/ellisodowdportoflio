@@ -20,6 +20,7 @@
 }
 .link-card {
   height: 200px;
+  min-width: 175px;
   width: 175px;
   border-radius: 20px;
   background-color: #282828;

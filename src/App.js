@@ -6,6 +6,7 @@ import Links from "./Components/Links";
 import Projects from "./Components/Projects";
 import AboutMe from "./Components/AboutMe";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import ProjectsCollapsable from "./Components/ProjectsCollapsable";
 function App() {
   return (
     <Router>
@@ -18,7 +19,8 @@ function App() {
                 <Landing />
                 <Skills />
                 <Links />
-                <Projects />
+                {/* <Projects /> */}
+                <ProjectsCollapsable />
               </div>
             }
           ></Route>

@@ -59,7 +59,9 @@ const Landing = () => {
   return (
     <>
       <div className="landing-zone">
-        <TopNavBar />
+        <div className="top-nav-landing-holder">
+          <TopNavBar />
+        </div>
         <div className="cover-text-holder">
           <div className="header-holder">
             <h1 className="header">{title}</h1>

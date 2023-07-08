@@ -10,7 +10,8 @@ const TopNavBar = () => {
           <p className="nav-link selected-nav">Development</p>
           <div
             onClick={() => {
-              navigate("/aboutme");
+              //do nothing rn
+              // navigate("/aboutme");
             }}
           >
             <p className="nav-link">About me</p>

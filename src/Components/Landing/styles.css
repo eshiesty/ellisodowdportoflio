@@ -97,6 +97,7 @@
   text-decoration-line: underline;
   color: white;
 }
+
 @keyframes text-cursor-blink {
   from {
     opacity: 0;
@@ -113,6 +114,11 @@
     opacity: 100;
   }
 }
+
+.top-nav-landing-holder {
+  width: 800px;
+}
+
 @media (max-width: 780px) {
   .landing-zone {
     height: 100vh;
@@ -144,12 +150,24 @@
     flex-direction: row;
     align-items: flex-start;
     align-items: center;
-    /* margin-left: 20px; */
+    margin-left: 20px;
   }
   .name-holder {
     /* background-color: red; */
     flex-direction: row;
     align-items: flex-start;
     margin-left: 20px;
+  }
+  .cover-text-holder {
+    width: 100vw;
+  }
+  .top-nav-landing-holder {
+    width: 60vw;
+  }
+  #landing-header-nav {
+    display: flex;
+    width: 100%;
+    margin-left: 0px;
+    justify-content: space-between;
   }
 }
