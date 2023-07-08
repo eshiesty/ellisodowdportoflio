@@ -20,7 +20,7 @@
 }
 .link-card {
   height: 200px;
-  min-width: 175px;
+
   width: 175px;
   border-radius: 20px;
   background-color: #282828;
@@ -61,7 +61,7 @@
   }
   .link-card {
     height: 150px;
-    width: 110px;
+    width: 120px;
     border-radius: 20px;
     background-color: #282828;
     display: flex;
