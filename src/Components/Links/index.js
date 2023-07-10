@@ -52,12 +52,12 @@ const Links = () => {
           </a>
           <a
             target="_blank"
-            href={"mailto:ellisodowd@gmail.com"}
-            className="link-card"
+            href={"mailto:ellisodowd.dev@gmail.com"}
+            className="link-card gmail-card"
           >
             <div className="top-color" />
             <img className="link-image gmail" src={GmailLogo} width={100} />
-            <p className="link-text email-text">ellisodowd@gmail.com</p>
+            <p className="link-text email-text">ellisodowd.dev@gmail.com</p>
           </a>
         </div>
       </div>
