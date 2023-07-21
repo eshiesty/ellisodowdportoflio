@@ -7,7 +7,7 @@ import HambergerMenu from "../HamburgerMenu";
 const AboutMe = () => {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
   return (
-    <div className="about-me-zone">
+    <>
       {isMobile ? (
         <div id="hamburger-container">
           <div
@@ -32,8 +32,10 @@ const AboutMe = () => {
           <TopNavBar />
         </div>
       )}
-      <h1>about me</h1>
-    </div>
+      <div className="about-me-zone">
+        <h1 id="about-me-header">About me (coming soon)</h1>
+      </div>
+    </>
   );
 };
 

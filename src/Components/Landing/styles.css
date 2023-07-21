@@ -23,10 +23,11 @@
   right: 100%;
   /* top: 50px; */
   z-index: 5;
-  position: absolute;
+  position: fixed;
   transition: all 1s ease;
   width: 90%;
   height: 100vh;
+  top: 0px;
 }
 .sub-header {
   font-size: 42pt;
