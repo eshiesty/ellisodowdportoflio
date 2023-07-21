@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./styles.css";
+import { MdMenu } from "react-icons/md";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 import TopNavBar from "../TopNavBar";
+import { isMobile } from "react-device-detect";
+import HambergerMenu from "../HamburgerMenu";
 const Landing = () => {
   let titleArray = [
     "Mobile developer",
@@ -18,7 +21,7 @@ const Landing = () => {
   const [writing, setWriting] = useState(false);
   const [deleting, setDeleting] = useState(false);
   const [titleComplete, setTitleComplete] = useState(true);
-  const [time, setTime] = useState(Date.now());
+  const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
   // setInterval(() => {
   //   console.log(title);
   //   setTitle(title.substring(0, title.length - 1));
@@ -59,9 +62,30 @@ const Landing = () => {
   return (
     <>
       <div className="landing-zone">
-        <div className="top-nav-landing-holder">
-          <TopNavBar />
-        </div>
+        {isMobile ? (
+          <>
+            <div
+              onClick={() => {
+                setHamburgerMenuOpen(!hamburgerMenuOpen);
+                console.log(hamburgerMenuOpen);
+              }}
+              id="hamburger-menu-icon-holder"
+            >
+              <MdMenu size={45} />
+            </div>
+            <div
+              className={`${
+                hamburgerMenuOpen ? "hamburger-menu" : "hamburger-hidden"
+              }`}
+            >
+              <HambergerMenu />
+            </div>
+          </>
+        ) : (
+          <div className="top-nav-landing-holder">
+            <TopNavBar />
+          </div>
+        )}
         <div className="cover-text-holder">
           <div className="header-holder">
             <h1 className="header">{title}</h1>

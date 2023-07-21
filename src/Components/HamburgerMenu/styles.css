@@ -1,0 +1,10 @@
+#hamburger-content-holder {
+  margin-top: 70px;
+  margin-left: 20px;
+}
+#hamburger-nav-options {
+  flex-direction: column;
+}
+.burger-link {
+  font-size: 18pt;
+}

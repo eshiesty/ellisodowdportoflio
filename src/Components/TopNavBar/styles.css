@@ -1,0 +1,5 @@
+@media (max-width: 780px) {
+  #landing-header-nav {
+    flex-direction: column;
+  }
+}

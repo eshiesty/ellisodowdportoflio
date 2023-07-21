@@ -43,8 +43,8 @@ const ProjectsCollapsable = () => {
   });
   return (
     <div id="projects-zone">
+      <h2 className="sub-header project-header">Projects</h2>
       <div className={`project-content-area-collapsed`}>
-        <h2 className="sub-header project-header">Projects</h2>
         {/* <div className="project-area "> */}
         <div
           onClick={() => {
@@ -58,11 +58,23 @@ const ProjectsCollapsable = () => {
           <div className="project-photo">
             <img width={57} height={65} src={YolkifyLogo} />
           </div>
-          <div className="project-name yolkify">
+          <div
+            className={`project-name ${
+              yolkifyOpen ? "" : "project-name-closed"
+            } yolkify`}
+          >
             <h3>Yolkify</h3>
           </div>
           <p className="project-description">
-            A social workout tracker for IOS and Android
+            A social workout tracker for IOS and Android.
+            <br /> Download the puiblic beta{" "}
+            <a
+              className="here-link"
+              href="https://testflight.apple.com/join/xiieG3jF"
+            >
+              here
+            </a>
+            .
           </p>
 
           <div className="skill-holder-grid">
@@ -118,7 +130,11 @@ const ProjectsCollapsable = () => {
           <div className="project-photo">
             <img width={57} height={65} src={YolkifyLogo} />
           </div>
-          <div className="project-name yolkify">
+          <div
+            className={`project-name ${
+              yolkifyWebOpen ? "" : "project-name-closed"
+            } yolkify`}
+          >
             <a href={yolkifyWebOpen ? null : "https://www.yolkify.app"}>
               <h3 className="project-name yolkify">yolkify.app</h3>
             </a>
@@ -179,7 +195,11 @@ const ProjectsCollapsable = () => {
 
             {/* <img width={60} height={60} src={mintervalclock} /> */}
           </div>
-          <div className="project-name minterval">
+          <div
+            className={`project-name ${
+              mintervalOpen ? "" : "project-name-closed"
+            } minterval`}
+          >
             <a>
               <h3 className="project-name minterval">minterval.com</h3>
             </a>

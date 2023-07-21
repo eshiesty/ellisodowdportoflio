@@ -1,19 +1,19 @@
 import React from "react";
 import "./styles.css";
 import { useNavigate, useHref } from "react-router-dom";
-const TopNavBar = () => {
+const HambergerMenu = () => {
   const href = useHref();
   const navigate = useNavigate();
   return (
     <>
-      <div id="landing-header-nav-holder">
-        <div id="landing-header-nav">
+      <div id="hamburger-content-holder">
+        <div id="hamburger-nav-options">
           <div
             onClick={() => {
               navigate("/");
             }}
           >
-            <p className={`nav-link ${href === "/" ? "selected-nav" : ""}`}>
+            <p className={`burger-link ${href === "/" ? "selected-nav" : ""}`}>
               Development
             </p>
           </div>
@@ -23,7 +23,7 @@ const TopNavBar = () => {
             }}
           >
             <p
-              className={`nav-link ${
+              className={`burger-link ${
                 href === "/aboutme" ? "selected-nav" : ""
               }`}
             >
@@ -31,7 +31,7 @@ const TopNavBar = () => {
             </p>
           </div>
           <p
-            className={`nav-link ${
+            className={`burger-link ${
               href === "/freelance" ? "selected-nav" : ""
             }`}
           >
@@ -43,4 +43,4 @@ const TopNavBar = () => {
   );
 };
 
-export default TopNavBar;
+export default HambergerMenu;
