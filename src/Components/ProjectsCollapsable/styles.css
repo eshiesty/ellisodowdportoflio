@@ -284,6 +284,10 @@
   cursor: pointer;
 }
 
+.here-link {
+  text-decoration: underline;
+  color: white;
+}
 /* smaller desktop */
 @media (max-width: 1200px) and (min-width: 781px) {
   #yolkify-web-ss {
@@ -378,17 +382,18 @@
     margin-left: 10px;
     /* margin-right: 10px; */
     grid-template-rows: auto auto 300px auto;
+    grid-template-columns: 70px 70px 2fr 2fr 10px;
   }
   .yolkify-grid-open {
     transform: none;
     padding: 10px;
     width: 90vw;
-    height: 900px;
+    height: 800px;
     margin-left: 10px;
     /* margin-right: 10px; */
     grid-template-rows: auto auto 300px auto;
     grid-template-columns: 70px 70px 2fr 2fr 10px;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
   }
   .yolkify-web-grid-open {
     transform: none;
@@ -397,7 +402,7 @@
     margin-left: 10px;
     height: 650px;
     grid-template-rows: auto auto minmax(240px, auto) auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .minterval-web-grid-open {
     transform: none;
