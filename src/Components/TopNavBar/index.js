@@ -30,6 +30,17 @@ const TopNavBar = () => {
               About me
             </p>
           </div>
+          <div
+            onClick={() => {
+              navigate("/hockey");
+            }}
+          >
+            <p
+              className={`nav-link ${href === "/hockey" ? "selected-nav" : ""}`}
+            >
+              Hockey
+            </p>
+          </div>
           <p
             className={`nav-link ${
               href === "/freelance" ? "selected-nav" : ""
