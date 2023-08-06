@@ -44,45 +44,19 @@ const Hockey = () => {
           <iframe
             allow="autoplay; fullscreen"
             type="text/html"
-            // src="https://www.youtube.com/embed/ccduckgqFmk?version=3&amp;enablejsapi=1&amp;html5=1&amp;hd=1&amp;wmode=opaque&amp;showinfo=0&amp;rel=0&amp;origin=https://laketahoelakers.com;&amp;controls=0&amp;playsinline=1&amp;autoplay=1&amp;mute=1"
-            src="https://www.youtube.com/embed/zVOrQwfCj5Q?version=3&amp;enablejsapi=1&amp;html5=1&amp;hd=1&amp;wmode=opaque&amp;showinfo=0&amp;rel=0&amp;origin=https://laketahoelakers.com;&amp;controls=0&amp;playsinline=1&amp;autoplay=1&amp;mute=1&amp;loop=1"
-            // src="https://www.youtube-nocookie.com/embed/jRN5PC3ZeXc?version=3&amp;enablejsapi=1&amp;html5=1&amp;hd=1&amp;wmode=opaque&amp;showinfo=0&amp;rel=0&amp;origin=https://laketahoelakers.com;&amp;controls=0&amp;playsinline=1"
+            src="https://www.youtube.com/embed/zVOrQwfCj5Q?version=3&amp;enablejsapi=1&amp;html5=1&amp;hd=1&amp;wmode=opaque&amp;showinfo=0&amp;rel=0&amp;origin=https://laketahoelakers.com;&amp;controls=0&amp;playsinline=1&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=zVOrQwfCj5Q"
             allowfullscreen=""
             width="100%"
             height="100%"
             class="intrinsic-ignore"
             id="video"
-            // style={{
-            // opacity: 1,
-            // visibility: "visible",
-            // width: "100%",
-            // height: "210%",
-            // // height: "355.556%",
-            // maxHeight: "none",
-            // maxWidth: "none",
-            // position: "absolute",
-            // left: 0,
-            // top: "-127.778%",
-            // display: "block",
-            // }}
             title="Ellis O'Dowd Highlights"
           ></iframe>
           <div id="video-touch-blocker" />
-          {/* <video
-            id="video"
-            src={backgroundVideo}
-            height={200}
-            width={400}
-            autoPlay
-            muted
-            loop
-          >
-            <div id="video-overlay"></div>
-          </video> */}
           {/* <h2 id="hockey-title">Ellis O'Dowd Private Coaching</h2> */}
         </div>
       </div>
-      <div className="hockey-header-holder"></div>
+      <div className="hockey-header-holder table-title">Where I've been</div>
       <div id="hockey-info-zone">
         <div id="timeline">
           <div className="hockey-team-years">
@@ -164,7 +138,7 @@ const Hockey = () => {
                   <div className="team-title">Tahoe Prep Academy</div>
                   <div className="team-extra underline">ECEL 18AAA</div>
                   <div className="team-extra underline">NAPHL 18AAA</div>
-                  <div className="team-extra">National championship</div>
+                  <div className="team-extra">Championship</div>
                   <div className="team-extra">Captain</div>
                 </div>
               </div>
