@@ -64,7 +64,7 @@
   cursor: pointer;
 }
 #landing-header-nav-holder {
-  margin-bottom: 100px;
+  margin-bottom: 0px;
 }
 #landing-header-nav {
   display: flex;

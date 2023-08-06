@@ -1,0 +1,297 @@
+.hockey-zone {
+  /* height: 100vh; */
+}
+#hockey-info-zone {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  height: 1000px;
+  justify-content: space-between;
+  /* height: 100%; */
+}
+#timeline {
+  display: flex;
+  flex-direction: row;
+}
+.nostyle {
+  color: none;
+}
+.horizontal-line {
+  width: 50px;
+  height: 2px;
+  background-color: #777777;
+}
+.hockey-year-holder {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: 20px;
+}
+.hockey-year {
+  color: #777777;
+}
+.hockey-team-years {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+#vertical-line-connector {
+  height: 100%;
+  width: 2px;
+  background-color: #777777;
+  /* margin-left: 100px; */
+}
+#experience-timeline {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.timeline-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.team-title {
+  font-size: 18pt;
+  color: white;
+  text-decoration-line: none;
+}
+.team-info {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.day {
+  color: lightgray;
+}
+.team-extra {
+  color: #777777;
+}
+.times {
+  letter-spacing: 1.5px;
+  /* text-decoration-line: underline; */
+}
+.lesson-section {
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+}
+table {
+  background-color: #101010;
+  border-radius: 10px;
+}
+th,
+td {
+  padding: 10px;
+}
+#rate-table {
+  margin-top: 50px;
+}
+tr:hover {
+  background-color: #272727;
+}
+.table-title {
+  margin-top: 20px;
+
+  font-size: 18pt;
+  font-weight: bold;
+  color: #999999;
+}
+.hockey-header {
+  font-size: 18pt;
+  font-weight: bold;
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 100px;
+  color: #999999;
+}
+.underline {
+  text-decoration-line: underline;
+}
+#hockey-title {
+  /* color: black; */
+  margin-left: 100px;
+  font-size: 36pt;
+  /* margin-top: -100px; */
+  position: absolute;
+  bottom: 100px;
+  /* margin-bottom: -100px; */
+  z-index: 10;
+  /* top: 50px; */
+  background: linear-gradient(25deg, rgb(254, 111, 28), rgb(15, 26, 108));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#video-holder {
+  height: 75vh;
+  overflow: hidden;
+}
+#video-touch-blocker {
+  /* background-color: red; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  top: 46px;
+}
+#video {
+  width: 100%;
+  margin-top: -100px;
+  object-fit: cover;
+  /* top: 50px; */
+  left: 0px;
+  /* z-index: -1; */
+  margin-top: -180px;
+  box-shadow: 0px 0px 10px 10px #101010;
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  height: 180%;
+  max-height: none;
+  max-width: none;
+  /* position: absolute; */
+  /* left: 0; */
+  /* top: 20%; */
+  /* display: block; */
+}
+#video:hover {
+  border-radius: 100px;
+}
+#video-overlay {
+  background-color: rgba(255, 103, 47, 0.82);
+  overflow: hidden;
+  height: 120%;
+  position: absolute;
+  z-index: 19;
+  bottom: 0;
+}
+.hockey-experience-subdivision {
+  /* margin-left: 200px; */
+}
+#lakers {
+  height: 187px;
+  margin-left: 1px;
+  /* width: 300px; */
+  border-image-slice: fill;
+}
+#islanders {
+  height: 150px;
+  /* width: 300px; */
+  border-image-slice: fill;
+}
+#advantage {
+  height: 150px;
+  /* width: 300px; */
+  border-image-slice: fill;
+}
+#valencia {
+  height: 190px;
+  /* width: 300px; */
+  border-image-slice: fill;
+}
+#riptide {
+  height: 155px;
+
+  border-image-slice: fill;
+}
+#tahoe {
+  /* height: 380px; */
+  width: 210px;
+  margin-left: -30px;
+  margin-top: -20px;
+  border-image-slice: fill;
+}
+.hockey-image-container {
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.hockey-header-holder {
+  display: none;
+}
+@media (max-width: 780px) {
+  .hockey-year-holder {
+    height: 100px;
+  }
+  table {
+    align-self: center;
+    min-width: 50vw;
+  }
+  .hockey-header-holder {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .team-title {
+    font-size: 12pt;
+  }
+  #about-me-header {
+    margin-top: 100px;
+  }
+  #hockey-info-zone {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .hockey-image-container {
+    height: 100px;
+    width: 100px;
+  }
+  #timeline {
+    margin-left: 0px;
+  }
+  #lakers {
+    height: 100px;
+    margin-left: 1px;
+    /* width: 300px; */
+    border-image-slice: fill;
+  }
+  #islanders {
+    height: 100px;
+    /* width: 300px; */
+    border-image-slice: fill;
+  }
+  #advantage {
+    height: 100px;
+    /* width: 300px; */
+    border-image-slice: fill;
+  }
+  #valencia {
+    height: 120px;
+    /* width: 300px; */
+    border-image-slice: fill;
+  }
+  #riptide {
+    height: 105px;
+
+    border-image-slice: fill;
+  }
+  #tahoe {
+    /* height: 380px; */
+    width: 130px;
+    margin-left: -20px;
+    margin-top: -5px;
+    border-image-slice: fill;
+  }
+  #video-touch-blocker {
+    height: 0px;
+  }
+  #video {
+    /* height: 240px; */
+    object-fit: cover;
+    margin-top: -105px;
+  }
+  #video-holder {
+    height: 250px;
+  }
+  .team-info {
+    margin-left: 10px;
+  }
+}
