@@ -17,7 +17,7 @@ const TopNavBar = () => {
               Development
             </p>
           </div>
-          <div
+          {/* <div
             onClick={() => {
               navigate("/aboutme");
             }}
@@ -29,7 +29,7 @@ const TopNavBar = () => {
             >
               About me
             </p>
-          </div>
+          </div> */}
           <div
             onClick={() => {
               navigate("/hockey");

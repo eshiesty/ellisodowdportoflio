@@ -1,5 +1,6 @@
 .skills-zone {
   height: 100vh;
+  margin-bottom: 100px;
   min-height: 740px;
   background-color: #191919;
 }
@@ -57,6 +58,11 @@
   flex-direction: row;
   height: 500px;
 }
+.skill-holder-front-end {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+}
 .logo-column {
   display: flex;
   flex-direction: column;
@@ -74,7 +80,20 @@
   font-size: 20pt;
   justify-content: space-between;
 }
-
+.column-front-end {
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+  height: 100%;
+  font-size: 20pt;
+  justify-content: space-between;
+}
+.front-end {
+  height: 720px;
+}
+.skill-text {
+  /* height: 100px; */
+}
 @media (max-width: 780px) {
   .skills-dropdown-holder {
     display: flex;
@@ -122,5 +141,14 @@
   }
   .skill-name-column {
     font-size: 12pt;
+  }
+  .column-front-end {
+    font-size: 12pt;
+  }
+  .skill-holder-front-end {
+    height: 380px;
+  }
+  .front-end {
+    height: 500px;
   }
 }
