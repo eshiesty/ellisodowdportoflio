@@ -3,6 +3,7 @@ import "./styles.css";
 import HTMLLogo from "../../Assets/html5.png";
 import CSSLogo from "../../Assets/CSS3.png";
 import JSLogo from "../../Assets/JS.png";
+import TSLogo from "../../Assets/ts.png";
 import ReactLogo from "../../Assets/React.png";
 import ReactNativeLogo from "../../Assets/ReactNative.png";
 import NodeJSLogo from "../../Assets/NodeJS.png";
@@ -39,14 +40,14 @@ const Skills = () => {
               scrollPosition / window.innerHeight <
                 (window.innerWidth > 600 ? 0.5 : 0.8) || rightDropDownOpen
                 ? "skills-dropdown-closed"
-                : "skills-dropdown-opened"
+                : "skills-dropdown-opened front-end"
             }
           >
             <div className="top-color" />
             <div className="dropdown-title-holder">
               <p>Front end</p>
             </div>
-            <div className="skill-holder">
+            <div className="skill-holder-front-end">
               <div className="logo-column">
                 <div className="skill-logo">
                   <img width={60} src={HTMLLogo} />
@@ -58,18 +59,22 @@ const Skills = () => {
                   <img width={50} src={JSLogo} />
                 </div>
                 <div className="skill-logo">
+                  <img width={50} src={TSLogo} />
+                </div>
+                <div className="skill-logo">
                   <img width={60} src={ReactLogo} />
                 </div>
                 <div className="skill-logo">
                   <img width={60} src={ReactNativeLogo} />
                 </div>
               </div>
-              <div className="skill-name-column">
-                <p>HTML5</p>
-                <p>CSS</p>
-                <p>Javascript</p>
-                <p>React</p>
-                <p>React Native</p>
+              <div className="column-front-end">
+                <p className="skill-text">HTML5</p>
+                <p className="skill-text">CSS</p>
+                <p className="skill-text">Javascript</p>
+                <p className="skill-text">Typescript</p>
+                <p className="skill-text">React</p>
+                <p className="skill-text">React Native</p>
               </div>
             </div>
           </div>

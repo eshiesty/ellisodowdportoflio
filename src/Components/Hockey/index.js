@@ -10,6 +10,7 @@ import valenciaPic from "../../Assets/Valencia.jpeg";
 import tahoePic from "../../Assets/tahoe.jpeg";
 import riptidePic from "../../Assets/riptide.png";
 import lakersPic from "../../Assets/lakeshow.jpg";
+import lakersSchedule from "../../Assets/lakeshowschedule.jpg";
 const Hockey = () => {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
@@ -136,8 +137,7 @@ const Hockey = () => {
                 </div>
                 <div className="team-info">
                   <div className="team-title">Tahoe Prep Academy</div>
-                  <div className="team-extra underline">ECEL 18AAA</div>
-                  <div className="team-extra underline">NAPHL 18AAA</div>
+                  <div className="team-extra underline">ECEL/NAPHL 18AAA</div>
                   <div className="team-extra">Championship</div>
                   <div className="team-extra">Captain</div>
                 </div>
@@ -159,7 +159,7 @@ const Hockey = () => {
                   <img id="riptide" src={riptidePic} />
                 </div>
                 <div className="team-info">
-                  <div className="team-title">Channel Islands Riptide</div>
+                  <div className="team-title">CI Riptide</div>
                   <div className="team-extra">First travel season</div>
                 </div>
               </div>
@@ -219,6 +219,18 @@ const Hockey = () => {
             </tr>
           </table>
         </div>
+      </div>
+      <div id="hockey-game-schedule">
+        <div className="game-text-holder">
+          <h3>Want to catch a game?</h3>
+          <a
+            href="https://goo.gl/maps/7dvQvXt2hg6CAhhQ9"
+            className="location-text underline"
+          >
+            South Lake Tahoe Ice Arena 📍
+          </a>
+        </div>
+        <img id="lakers-schedule" src={lakersSchedule} />
       </div>
     </>
   );

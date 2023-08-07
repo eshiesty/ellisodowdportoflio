@@ -17,7 +17,7 @@ const HambergerMenu = () => {
               Development
             </p>
           </div>
-          <div
+          {/* <div
             onClick={() => {
               navigate("/aboutme");
             }}
@@ -29,7 +29,7 @@ const HambergerMenu = () => {
             >
               About me
             </p>
-          </div>
+          </div> */}
           <div
             onClick={() => {
               navigate("/hockey");
