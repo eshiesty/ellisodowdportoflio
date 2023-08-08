@@ -168,7 +168,7 @@ const Hockey = () => {
         </div>
         <div className="lesson-section">
           <table>
-            <caption className="table-title">Lesson slots</caption>
+            <caption className="table-title">Lesson times</caption>
             <tr>
               <th>Day</th>
               <th>Times</th>
@@ -196,7 +196,8 @@ const Hockey = () => {
           </table>{" "}
           <div className="team-extra">*All lessons are in the AM</div>
           <div className="team-extra">
-            Text me at <span className="underline">(805)722-2603</span> for
+            Check the google calendar below, <br />
+            or Text me at <span className="underline">(805)722-2603</span> for
             availibilty
           </div>
           <table id="rate-table">
@@ -218,6 +219,17 @@ const Hockey = () => {
               <td>$40</td>
             </tr>
           </table>
+        </div>
+      </div>
+      <div id="calendar-section">
+        <div id="calendar">
+          <iframe
+            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2ZCU2fQGzDs_sg3w4msWh9PCYsqQLe-IRdKsX3FKlvZ_Jjyv0Yo6EmY4GF4TneB5-6LC49bGNr?gv=true"
+            style={{ border: 0, borderColor: "red", backgrounColor: "black" }}
+            width="100%"
+            height="600"
+            frameborder="0"
+          ></iframe>
         </div>
       </div>
       <div id="hockey-game-schedule">
