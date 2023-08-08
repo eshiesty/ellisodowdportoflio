@@ -41,7 +41,7 @@
 #calendar {
   /* background: linear-gradient(rgb(249, 236, 215), #5d5d5d); */
   /* background: linear-gradient(rgb(82, 158, 212), #1f1f1f); */
-  background: rgb(115, 174, 215);
+  background: rgb(235, 237, 238);
   width: 90%;
   align-self: center;
   overflow: hidden;
@@ -139,6 +139,9 @@ tr:hover {
   font-size: 18pt;
   font-weight: bold;
   color: #999999;
+}
+.InnA6 {
+  color: white;
 }
 .hockey-header {
   font-size: 18pt;
@@ -353,6 +356,7 @@ tr:hover {
   }
   #calendar {
     width: 90%;
+    /* height: 900px; */
   }
   #calendar-section {
     margin-left: 0;
