@@ -38,19 +38,31 @@
 .ThBFj {
   color: white;
 }
+#lesson-booking-header {
+  align-self: center;
+  margin-bottom: -20px;
+}
 #calendar {
   /* background: linear-gradient(rgb(249, 236, 215), #5d5d5d); */
   /* background: linear-gradient(rgb(82, 158, 212), #1f1f1f); */
-  background: rgb(235, 237, 238);
-  width: 90%;
+  width: 100vw;
   align-self: center;
   overflow: hidden;
   border-radius: 20px;
+  height: fit-content;
 }
+
 #calendar-section {
   display: flex;
-  justify-content: center;
-  margin: 50px;
+  /* align-items: center; */
+  flex-direction: column;
+  flex: 1;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+#calendar-section::-webkit-scrollbar {
+  display: none;
 }
 .hockey-team-years {
   display: flex;
@@ -96,10 +108,19 @@
   letter-spacing: 1.5px;
   /* text-decoration-line: underline; */
 }
+#cal {
+  width: 100vw;
+  height: 870px;
+}
+#cal::-webkit-scrollbar {
+  display: none;
+}
 .lesson-section {
-  margin-right: 10%;
+  margin-right: 4%;
+  margin-left: 4%;
   display: flex;
   flex-direction: column;
+  /* flex: 1; */
 }
 #lakers-schedule {
   width: 30vw;
@@ -154,6 +175,12 @@ tr:hover {
 .underline {
   text-decoration-line: underline;
 }
+.game-text-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2%;
+}
 #hockey-title {
   /* color: black; */
   margin-left: 100px;
@@ -176,7 +203,7 @@ tr:hover {
 #video-touch-blocker {
   /* background-color: red; */
   position: absolute;
-  height: 100%;
+  height: 75vh;
   width: 100%;
   z-index: 5;
   top: 46px;
@@ -348,7 +375,7 @@ tr:hover {
     margin-left: 10px;
   }
   #hockey-game-schedule {
-    flex-direction: column;
+    flex-direction: column-reverse;
     /* margin-top: 50px; */
   }
   #lakers-schedule {
@@ -361,8 +388,14 @@ tr:hover {
   #calendar-section {
     margin-left: 0;
     margin-right: 0;
+    padding: 0;
+    width: 100vw;
   }
   .lesson-section {
     margin-bottom: 50px;
+  }
+  #lesson-booking-header {
+    align-self: center;
+    margin-bottom: 10px;
   }
 }
