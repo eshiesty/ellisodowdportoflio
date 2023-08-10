@@ -11,6 +11,7 @@ import tahoePic from "../../Assets/tahoe.jpeg";
 import riptidePic from "../../Assets/riptide.png";
 import lakersPic from "../../Assets/lakeshow.jpg";
 import lakersSchedule from "../../Assets/lakeshowschedule.jpg";
+import { InlineWidget } from "react-calendly";
 const Hockey = () => {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
@@ -221,28 +222,33 @@ const Hockey = () => {
           </table>
         </div>
       </div>
-      <div id="calendar-section">
-        <div id="calendar">
-          <iframe
-            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2ZCU2fQGzDs_sg3w4msWh9PCYsqQLe-IRdKsX3FKlvZ_Jjyv0Yo6EmY4GF4TneB5-6LC49bGNr?gv=true"
-            style={{ border: 0, borderColor: "red", backgrounColor: "black" }}
-            width="100%"
-            height="600"
-            frameborder="0"
-          ></iframe>
-        </div>
-      </div>
       <div id="hockey-game-schedule">
         <div className="game-text-holder">
-          <h3>Want to catch a game?</h3>
-          <a
-            href="https://goo.gl/maps/7dvQvXt2hg6CAhhQ9"
-            className="location-text underline"
-          >
-            South Lake Tahoe Ice Arena 📍
-          </a>
+          <div>
+            <h3>Want to catch a game?</h3>
+            <a
+              href="https://goo.gl/maps/7dvQvXt2hg6CAhhQ9"
+              className="location-text underline"
+            >
+              South Lake Tahoe Ice Arena 📍
+            </a>
+          </div>
+          <img id="lakers-schedule" src={lakersSchedule} />
         </div>
-        <img id="lakers-schedule" src={lakersSchedule} />
+        <div id="calendar-section">
+          <h3 id="lesson-booking-header">Book a lesson!</h3>
+          <InlineWidget
+            id="cal"
+            pageSettings={{
+              backgroundColor: "171717",
+              hideEventTypeDetails: false,
+              hideLandingPageDetails: false,
+              primaryColor: "00a2ff",
+              textColor: "DDDDDD",
+            }}
+            url="https://calendly.com/ellisodowd/private-hockey-lesson"
+          />
+        </div>
       </div>
     </>
   );
