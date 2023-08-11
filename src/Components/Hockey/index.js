@@ -184,7 +184,7 @@ const Hockey = () => {
             </tr>
             <tr>
               <td>Wed</td>
-              <td className="times">6:30, 8:30, 9:15</td>
+              <td className="times">7:30, 8:15, 9:00</td>
             </tr>
             <tr>
               <td>Thu</td>
@@ -240,6 +240,7 @@ const Hockey = () => {
           <InlineWidget
             id="cal"
             pageSettings={{
+              hideGdprBanner: true,
               backgroundColor: "171717",
               hideEventTypeDetails: false,
               hideLandingPageDetails: false,
