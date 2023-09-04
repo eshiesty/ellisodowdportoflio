@@ -3,6 +3,7 @@ import "./styles.css";
 import HTMLLogo from "../../Assets/html5.png";
 import CSSLogo from "../../Assets/CSS3.png";
 import JSLogo from "../../Assets/JS.png";
+import TSLogo from "../../Assets/ts.png";
 import ReactLogo from "../../Assets/React.png";
 import ReactNativeLogo from "../../Assets/ReactNative.png";
 import NodeJSLogo from "../../Assets/NodeJS.png";
@@ -85,7 +86,7 @@ const ProjectsCollapsable = () => {
                 <img width={60} src={ReactNativeLogo} />
               </div>
               <div className="technology-logo">
-                <img width={50} src={JSLogo} />
+                <img width={50} src={TSLogo} />
               </div>
               <div className="technology-logo">
                 <img width={60} src={CSSLogo} />
@@ -102,7 +103,7 @@ const ProjectsCollapsable = () => {
           <div className="skill-name-holder-grid">
             {/* <div className="skill-name-column"> */}
             <p className="skill-name-grid">React Native</p>
-            <p className="skill-name-grid">Javascript</p>
+            <p className="skill-name-grid">Typesript</p>
             <p className="skill-name-grid">CSS</p>
             <p className="skill-name-grid">Mongodb</p>
             <p className="skill-name-grid">Realm</p>
