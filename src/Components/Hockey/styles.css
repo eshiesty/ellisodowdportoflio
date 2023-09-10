@@ -42,6 +42,13 @@
   align-self: center;
   margin-bottom: -20px;
 }
+#lesson-disclaimer {
+  align-self: center;
+  background-color: rgba(255, 0, 0, 0.415);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: -40px;
+}
 #calendar {
   /* background: linear-gradient(rgb(249, 236, 215), #5d5d5d); */
   /* background: linear-gradient(rgb(82, 158, 212), #1f1f1f); */
@@ -397,5 +404,9 @@ tr:hover {
   #lesson-booking-header {
     align-self: center;
     margin-bottom: 10px;
+  }
+  #lesson-disclaimer {
+    align-self: center;
+    margin-bottom: -5px;
   }
 }
