@@ -238,8 +238,8 @@ const Hockey = () => {
         <div id="calendar-section">
           <h3 id="lesson-booking-header">Book a lesson!</h3>
           <h3 id="lesson-disclaimer">
-            Lessons are not availibile from 9/12-9/15 due to the Lake Take
-            Lakers training camp.
+            Lessons will only be availible on Tuesdays and Thursdays{"\n"} until
+            the end of my college semester (12/18/23)
           </h3>
           <InlineWidget
             id="cal"
