@@ -68,12 +68,19 @@ const ProjectsCollapsable = () => {
           </div>
           <p className="project-description">
             A social workout tracker for IOS and Android.
-            <br /> Download the puiblic beta{" "}
+            <br /> Download on{" "}
             <a
               className="here-link"
-              href="https://testflight.apple.com/join/xiieG3jF"
+              href="https://apps.apple.com/us/app/yolkify/id6447922223"
             >
-              here
+              ios
+            </a>{" "}
+            and{" "}
+            <a
+              className="here-link"
+              href="https://play.google.com/store/apps/details?id=com.yolkify"
+            >
+              android
             </a>
             .
           </p>
