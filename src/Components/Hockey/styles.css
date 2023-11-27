@@ -250,8 +250,9 @@ tr:hover {
   /* margin-left: 200px; */
 }
 #lakers {
-  height: 187px;
-  margin-left: 1px;
+  width: 200px;
+  margin-top: -70px;
+  margin-left: -15px;
   /* width: 300px; */
   border-image-slice: fill;
 }
@@ -332,9 +333,9 @@ tr:hover {
     height: 800px;
   }
   #lakers {
-    height: 125px;
-    margin-left: 1px;
-    /* width: 300px; */
+    width: 160px;
+    margin-top: -60px;
+    margin-left: -20px;
     border-image-slice: fill;
   }
   .team-extra {

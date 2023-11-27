@@ -10,6 +10,7 @@ import valenciaPic from "../../Assets/Valencia.jpeg";
 import tahoePic from "../../Assets/tahoe.jpeg";
 import riptidePic from "../../Assets/riptide.png";
 import lakersPic from "../../Assets/lakeshow.jpg";
+import lakersGoalPic from "../../Assets/LakersGoal.jpeg";
 import lakersSchedule from "../../Assets/lakeshowschedule.jpg";
 import { InlineWidget } from "react-calendly";
 const Hockey = () => {
@@ -87,7 +88,7 @@ const Hockey = () => {
               <div className="timeline-item">
                 <div className="horizontal-line" />
                 <div className="hockey-image-container">
-                  <img id="lakers" src={lakersPic} />
+                  <img id="lakers" src={lakersGoalPic} />
                 </div>
                 <div className="team-info">
                   <a
