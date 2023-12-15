@@ -11,7 +11,7 @@ import tahoePic from "../../Assets/tahoe.jpeg";
 import riptidePic from "../../Assets/riptide.png";
 import lakersPic from "../../Assets/lakeshow.jpg";
 import lakersGoalPic from "../../Assets/LakersGoal.jpeg";
-import lakersSchedule from "../../Assets/lakeshowschedule.jpg";
+import lakeshowTahoeBlue from "../../Assets/lakeshowtahoeblue.jpg";
 import { InlineWidget } from "react-calendly";
 const Hockey = () => {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
@@ -228,19 +228,27 @@ const Hockey = () => {
           <div>
             <h3>Want to catch a game?</h3>
             <a
+              href="https://maps.app.goo.gl/7chv8S4qtGxjGzddA"
+              className="location-text underline"
+            >
+              Tahoe Blue Event Center 📍
+            </a>
+          </div>
+          {/* <div>
+            <h3>Want to catch a game?</h3>
+            <a
               href="https://goo.gl/maps/7dvQvXt2hg6CAhhQ9"
               className="location-text underline"
             >
               South Lake Tahoe Ice Arena 📍
             </a>
-          </div>
-          <img id="lakers-schedule" src={lakersSchedule} />
+          </div> */}
+          <img id="lakers-schedule" src={lakeshowTahoeBlue} />
         </div>
         <div id="calendar-section">
           <h3 id="lesson-booking-header">Book a lesson!</h3>
           <h3 id="lesson-disclaimer">
-            Lessons will only be availible on Tuesdays and Thursdays{"\n"} until
-            the end of my college semester (12/18/23)
+            Lesson dates are only shown 2 weeks in advance*
           </h3>
           <InlineWidget
             id="cal"
