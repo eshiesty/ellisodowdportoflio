@@ -47,7 +47,8 @@ const Hockey = () => {
           <iframe
             allow="autoplay; fullscreen"
             type="text/html"
-            src="https://www.youtube.com/embed/zVOrQwfCj5Q?version=3&amp;enablejsapi=1&amp;html5=1&amp;hd=1&amp;wmode=opaque&amp;showinfo=0&amp;rel=0&amp;origin=https://laketahoelakers.com;&amp;controls=0&amp;playsinline=1&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=zVOrQwfCj5Q"
+            // https://youtu.be/GjUIUca2ifg
+            src="https://www.youtube.com/embed/GjUIUca2ifg?version=3&amp;enablejsapi=1&amp;html5=1&amp;hd=1&amp;wmode=opaque&amp;showinfo=0&amp;rel=0&amp;origin=https://laketahoelakers.com;&amp;controls=0&amp;playsinline=1&amp;autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=GjUIUca2ifg"
             allowfullscreen=""
             width="100%"
             height="100%"
