@@ -1,6 +1,12 @@
 .hockey-zone {
   /* height: 100vh; */
 }
+.rates-and-payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50vw;
+}
 #hockey-info-zone {
   /* height: 100vh; */
   display: flex;
@@ -61,12 +67,15 @@
 
 #calendar-section {
   display: flex;
+  width: 70vw;
+  height: 900px;
+
+  /* max-height: 500px; */
   /* align-items: center; */
   flex-direction: column;
   flex: 1;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 0;
+  margin-left: -50px;
+  margin-right: -100px;
 }
 #calendar-section::-webkit-scrollbar {
   display: none;
@@ -111,20 +120,23 @@
 .team-extra {
   color: #777777;
 }
+.under-lesson {
+  align-self: center;
+}
 .times {
   letter-spacing: 1.5px;
   /* text-decoration-line: underline; */
 }
 #cal {
-  width: 100vw;
-  height: 870px;
+  /* width: 100vw; */
+  /* height: 870px; */
 }
 #cal::-webkit-scrollbar {
   display: none;
 }
 .lesson-section {
-  margin-right: 4%;
-  margin-left: 4%;
+  /* margin-right: 4%; */
+  /* margin-left: 4%; */
   display: flex;
   flex-direction: column;
   /* flex: 1; */
@@ -154,9 +166,11 @@ table {
 th,
 td {
   padding: 10px;
+  text-align: center;
 }
 #rate-table {
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  width: 250px;
 }
 tr:hover {
   background-color: #272727;
@@ -283,11 +297,40 @@ tr:hover {
   margin-top: -20px;
   border-image-slice: fill;
 }
+.payment-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #101010;
+  width: 250px;
+  height: 120px;
+  border-radius: 10px;
+}
+#option1 {
+  margin-bottom: 20px;
+}
+#payment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#venmo {
+  width: 200px;
+}
+#zelle {
+  width: 140px;
+}
+.payment-link {
+  color: white;
+  font-size: 18pt;
+}
 .hockey-image-container {
   overflow: hidden;
   height: 150px;
   width: 150px;
-  border-radius: 50%;
+  border-radius: 70%;
 }
 .hockey-header-holder {
   display: none;
@@ -295,6 +338,7 @@ tr:hover {
 @media (max-width: 780px) {
   .hockey-year-holder {
     height: 100px;
+    margin-left: 10px;
   }
   table {
     align-self: center;
@@ -314,7 +358,7 @@ tr:hover {
   }
   #hockey-info-zone {
     flex-direction: column;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     padding-left: 0;
     height: fit-content;
   }
@@ -397,7 +441,7 @@ tr:hover {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
   }
   .lesson-section {
     margin-bottom: 50px;
@@ -409,5 +453,9 @@ tr:hover {
   #lesson-disclaimer {
     align-self: center;
     margin-bottom: -5px;
+  }
+  .rates-and-payment {
+    flex-direction: column;
+    width: auto;
   }
 }

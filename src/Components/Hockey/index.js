@@ -12,6 +12,8 @@ import riptidePic from "../../Assets/riptide.png";
 import lakersPic from "../../Assets/lakeshow.jpg";
 import lakersGoalPic from "../../Assets/LakersGoal.jpeg";
 import lakeshowTahoeBlue from "../../Assets/lakeshowtahoeblue.jpg";
+import venmoLogo from "../../Assets/venmo-logo.png";
+import zelleLogo from "../../Assets/zelle.png";
 import { InlineWidget } from "react-calendly";
 const Hockey = () => {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
@@ -170,39 +172,54 @@ const Hockey = () => {
           </div>
         </div>
         <div className="lesson-section">
-          <table>
-            <caption className="table-title">Lesson times</caption>
-            <tr>
-              <th>Day</th>
-              <th>Times</th>
-            </tr>
-            <tr>
-              <td className="day">Mon</td>
-              <td className="times">6:00, 6:45, 7:30, 8:15, 9:00</td>
-            </tr>
-            <tr>
-              <td>Tue</td>
-              <td className="times">8:15, 9:00</td>
-            </tr>
-            <tr>
-              <td>Wed</td>
-              <td className="times">7:30, 8:15, 9:00</td>
-            </tr>
-            <tr>
-              <td>Thu</td>
-              <td className="times">8:15, 9:00</td>
-            </tr>
-            <tr>
-              <td>Fri</td>
-              <td className="times">8:15, 9:00</td>
-            </tr>
-          </table>{" "}
-          <div className="team-extra">*All lessons are in the AM</div>
-          <div className="team-extra">
-            Check the google calendar below, <br />
-            or Text me at <span className="underline">(805)722-2603</span> for
-            availibilty
+          <div id="calendar-section">
+            <h3 id="lesson-booking-header">Book a lesson!</h3>
+            <h3 id="lesson-disclaimer">
+              Lesson dates are only shown 2 weeks in advance*
+            </h3>
+            <InlineWidget
+              id="cal"
+              styles={{
+                height: 700,
+                margin: 0,
+                padding: 0,
+              }}
+              pageSettings={{
+                hideGdprBanner: true,
+
+                backgroundColor: "#171717",
+                hideEventTypeDetails: false,
+                hideLandingPageDetails: false,
+                primaryColor: "00a2ff",
+                textColor: "DDDDDD",
+              }}
+              url="https://calendly.com/ellisodowd/private-hockey-lesson"
+            />
+            {/* <div className="under-lesson">
+              <div className="team-extra">*All lessons are in the AM</div>
+              <div className="team-extra">
+                Feel free to text me at{" "}
+                <span className="underline">(805)722-2603</span>
+              </div>
+            </div> */}
           </div>
+        </div>
+      </div>
+      <div id="hockey-game-schedule">
+        {/* <div className="game-text-holder">
+          <div>
+            <h3>Want to catch a game?</h3>
+            <a
+              href="https://maps.app.goo.gl/7chv8S4qtGxjGzddA"
+              className="location-text underline"
+            >
+              Tahoe Blue Event Center 📍
+            </a>
+          </div>
+
+          <img id="lakers-schedule" src={lakeshowTahoeBlue} />
+        </div> */}
+        <div className="rates-and-payment">
           <table id="rate-table">
             <caption className="table-title">Rates</caption>
             <tr>
@@ -222,47 +239,30 @@ const Hockey = () => {
               <td>$40</td>
             </tr>
           </table>
-        </div>
-      </div>
-      <div id="hockey-game-schedule">
-        <div className="game-text-holder">
-          <div>
-            <h3>Want to catch a game?</h3>
-            <a
-              href="https://maps.app.goo.gl/7chv8S4qtGxjGzddA"
-              className="location-text underline"
-            >
-              Tahoe Blue Event Center 📍
-            </a>
+          <div id="payment-section">
+            <div className="table-title">Payment options</div>
+            <div className="payment-option" id="option1">
+              <a href="https://www.venmo.com/u/Ellis-ODowd">
+                {" "}
+                <img id="venmo" src={venmoLogo} />
+              </a>
+              <a
+                className="payment-link"
+                href="https://www.venmo.com/u/Ellis-ODowd"
+              >
+                @Ellis-ODowd
+              </a>
+            </div>
+            <div className="payment-option">
+              <a href="https://www.venmo.com/u/Ellis-ODowd">
+                {" "}
+                <img id="zelle" src={zelleLogo} />
+              </a>
+              <a className="payment-link" href="https://zellepay.com">
+                (805)722-2603
+              </a>
+            </div>
           </div>
-          {/* <div>
-            <h3>Want to catch a game?</h3>
-            <a
-              href="https://goo.gl/maps/7dvQvXt2hg6CAhhQ9"
-              className="location-text underline"
-            >
-              South Lake Tahoe Ice Arena 📍
-            </a>
-          </div> */}
-          <img id="lakers-schedule" src={lakeshowTahoeBlue} />
-        </div>
-        <div id="calendar-section">
-          <h3 id="lesson-booking-header">Book a lesson!</h3>
-          <h3 id="lesson-disclaimer">
-            Lesson dates are only shown 2 weeks in advance*
-          </h3>
-          <InlineWidget
-            id="cal"
-            pageSettings={{
-              hideGdprBanner: true,
-              backgroundColor: "171717",
-              hideEventTypeDetails: false,
-              hideLandingPageDetails: false,
-              primaryColor: "00a2ff",
-              textColor: "DDDDDD",
-            }}
-            url="https://calendly.com/ellisodowd/private-hockey-lesson"
-          />
         </div>
       </div>
     </>
