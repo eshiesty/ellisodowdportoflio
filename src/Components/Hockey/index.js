@@ -175,8 +175,7 @@ const Hockey = () => {
           <div id="calendar-section">
             <h3 id="lesson-booking-header">Book a lesson!</h3>
             <h3 id="lesson-disclaimer">
-              I will be out of the country from 8/9-8/24,
-              <br /> lessons will unavailable during this time.
+              Lessons are only shown up to 2 weeks in advance.
             </h3>
             <InlineWidget
               id="cal"
