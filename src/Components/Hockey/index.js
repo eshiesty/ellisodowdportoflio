@@ -175,8 +175,11 @@ const Hockey = () => {
           <div id="calendar-section">
             <h3 id="lesson-booking-header">Book a lesson!</h3>
             <h3 id="lesson-disclaimer">
-              Lessons are only shown up to 2 weeks in advance.
+              Lessons are unavailible 10/7 - 10/10 due to RHA camp.
             </h3>
+            {/* <h3 id="lesson-disclaimer">
+              Lessons are only shown up to 2 weeks in advance.
+            </h3> */}
             <InlineWidget
               id="cal"
               styles={{
