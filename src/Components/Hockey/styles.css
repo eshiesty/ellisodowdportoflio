@@ -494,7 +494,7 @@ tr:hover {
   }
   .lesson-button {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .lesson-column {
     width: 90vw;
@@ -508,7 +508,7 @@ tr:hover {
     /* background-color: red; */
   }
   #hockey-column {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     flex-direction: column-reverse;
   }
   #lakers-schedule {

@@ -218,11 +218,11 @@ const Hockey = () => {
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>$50</td>
+                  <td>$60</td>
                 </tr>
                 <tr>
                   <td>3+</td>
-                  <td>$40</td>
+                  <td>$50</td>
                 </tr>
               </table>
             </div>
@@ -266,7 +266,6 @@ const Hockey = () => {
               </div>
             </div>
           </div>
-          <div className="rates-and-payment"></div>
           <div id="hockey-game-schedule">
             <div className="game-text-holder">
               <div>
