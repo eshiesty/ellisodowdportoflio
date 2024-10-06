@@ -11,10 +11,141 @@ import tahoePic from "../../Assets/tahoe.jpeg";
 import riptidePic from "../../Assets/riptide.png";
 import lakersPic from "../../Assets/lakeshow.jpg";
 import lakersGoalPic from "../../Assets/LakersGoal.jpeg";
-import lakeshowTahoeBlue from "../../Assets/lakeshowtahoeblue.jpg";
+import RIRschedule from "../../Assets/RIRschedule.png";
 import venmoLogo from "../../Assets/venmo-logo.png";
 import zelleLogo from "../../Assets/zelle.png";
-import { InlineWidget } from "react-calendly";
+import iceraiders from "../../Assets/iceraiders.jpg";
+import {
+  InlineWidget,
+  PopupButton,
+  PopupModal,
+  PopupWidget,
+} from "react-calendly";
+
+const HockeyTimeline = () => {
+  return (
+    <div id="timeline">
+      <div className="hockey-team-years">
+        <div className="hockey-year-holder">
+          <div className="hockey-year">2024</div>
+        </div>
+        <div className="hockey-year-holder">
+          <div className="hockey-year">2023</div>
+        </div>
+        <div className="hockey-year-holder">
+          <div className="hockey-year">2022</div>
+        </div>
+        <div className="hockey-year-holder">
+          <div className="hockey-year">2021</div>
+        </div>
+        <div className="hockey-year-holder">
+          <div className="hockey-year">2018</div>
+        </div>
+        <div className="hockey-year-holder">
+          <div className="hockey-year">2016</div>
+        </div>
+        <div className="hockey-year-holder">
+          <div className="hockey-year">2011</div>
+        </div>
+      </div>
+      <div id="vertical-line-connector" />
+      <div className="hockey-experience-subdivision">
+        <div id="experience-timeline">
+          <div className="timeline-item">
+            <div className="horizontal-line" />
+            <div className="hockey-image-container">
+              <img id="iceraiders" src={iceraiders} />
+            </div>
+            <div className="team-info">
+              <a href="https://www.renoiceraiders.com" className="team-title">
+                Reno Ice Raiders
+              </a>
+              <div className="team-extra underline">MHL</div>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="horizontal-line" />
+            <div className="hockey-image-container">
+              <img id="lakers" src={lakersGoalPic} />
+            </div>
+            <div className="team-info">
+              <a href="https://www.laketahoelakers.com" className="team-title">
+                Lake Tahoe Lakers
+              </a>
+              <div className="team-extra underline">USPHL Premier</div>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="horizontal-line" />
+            <div className="hockey-image-container">
+              <img id="islanders" src={islandersPic} />
+            </div>
+            <div className="team-info">
+              <a
+                className="team-title"
+                href="https://pal-ice-hockey.kreezee-sports.com/jr-islanders"
+              >
+                New York Jr. Islanders
+              </a>
+              <div className="team-extra underline">USPHL Premier</div>
+              <div className="team-extra ">Alternate captain</div>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="horizontal-line" />
+            <div className="hockey-image-container">
+              <img id="advantage" src={advantagePic} />
+            </div>
+            <div className="team-info">
+              <a
+                href="https://www.bostonadvantagehockey.com/"
+                className="team-title"
+              >
+                Boston Advantage
+              </a>
+              <div className="team-extra underline">USPHL Premier</div>
+              <div className="team-extra">Rookie season</div>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="horizontal-line" />
+            <div className="hockey-image-container">
+              <img id="tahoe" src={tahoePic} />
+            </div>
+            <div className="team-info">
+              <div className="team-title">Tahoe Prep Academy</div>
+              <div className="team-extra underline">ECEL/NAPHL 18AAA</div>
+              <div className="team-extra">Championship</div>
+              <div className="team-extra">Captain</div>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="horizontal-line" />
+            <div className="hockey-image-container">
+              <img id="valencia" src={valenciaPic} />
+            </div>
+            <div className="team-info">
+              <div className="team-title">Valencia Jr. Flyers</div>
+              <div className="team-extra underline">SCAHA 14AA</div>
+              <div className="team-extra">Alternate captain</div>
+            </div>
+          </div>
+          <div className="timeline-item">
+            <div className="horizontal-line" />
+            <div className="hockey-image-container">
+              <img id="riptide" src={riptidePic} />
+            </div>
+            <div className="team-info">
+              <div className="team-title">CI Riptide</div>
+              <div className="team-extra">First travel season</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Hockey = () => {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
@@ -62,205 +193,97 @@ const Hockey = () => {
           {/* <h2 id="hockey-title">Ellis O'Dowd Private Coaching</h2> */}
         </div>
       </div>
-      <div className="hockey-header-holder table-title">Where I've been</div>
       <div id="hockey-info-zone">
-        <div id="timeline">
-          <div className="hockey-team-years">
-            <div className="hockey-year-holder">
-              <div className="hockey-year">2023</div>
-            </div>
-            <div className="hockey-year-holder">
-              <div className="hockey-year">2022</div>
-            </div>
-            <div className="hockey-year-holder">
-              <div className="hockey-year">2021</div>
-            </div>
-            <div className="hockey-year-holder">
-              <div className="hockey-year">2018</div>
-            </div>
-            <div className="hockey-year-holder">
-              <div className="hockey-year">2016</div>
-            </div>
-            <div className="hockey-year-holder">
-              <div className="hockey-year">2011</div>
-            </div>
-          </div>
-          <div id="vertical-line-connector" />
-          <div className="hockey-experience-subdivision">
-            <div id="experience-timeline">
-              <div className="timeline-item">
-                <div className="horizontal-line" />
-                <div className="hockey-image-container">
-                  <img id="lakers" src={lakersGoalPic} />
-                </div>
-                <div className="team-info">
-                  <a
-                    href="https://www.laketahoelakers.com"
-                    className="team-title"
-                  >
-                    Lake Tahoe Lakers
-                  </a>
-                  <div className="team-extra underline">USPHL Premier</div>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="horizontal-line" />
-                <div className="hockey-image-container">
-                  <img id="islanders" src={islandersPic} />
-                </div>
-                <div className="team-info">
-                  <a
-                    className="team-title"
-                    href="https://pal-ice-hockey.kreezee-sports.com/jr-islanders"
-                  >
-                    New York Jr. Islanders
-                  </a>
-                  <div className="team-extra underline">USPHL Premier</div>
-                  <div className="team-extra ">Alternate captain</div>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="horizontal-line" />
-                <div className="hockey-image-container">
-                  <img id="advantage" src={advantagePic} />
-                </div>
-                <div className="team-info">
-                  <a
-                    href="https://www.bostonadvantagehockey.com/"
-                    className="team-title"
-                  >
-                    Boston Advantage
-                  </a>
-                  <div className="team-extra underline">USPHL Premier</div>
-                  <div className="team-extra">Rookie season</div>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="horizontal-line" />
-                <div className="hockey-image-container">
-                  <img id="tahoe" src={tahoePic} />
-                </div>
-                <div className="team-info">
-                  <div className="team-title">Tahoe Prep Academy</div>
-                  <div className="team-extra underline">ECEL/NAPHL 18AAA</div>
-                  <div className="team-extra">Championship</div>
-                  <div className="team-extra">Captain</div>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="horizontal-line" />
-                <div className="hockey-image-container">
-                  <img id="valencia" src={valenciaPic} />
-                </div>
-                <div className="team-info">
-                  <div className="team-title">Valencia Jr. Flyers</div>
-                  <div className="team-extra underline">SCAHA 14AA</div>
-                  <div className="team-extra">Alternate captain</div>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="horizontal-line" />
-                <div className="hockey-image-container">
-                  <img id="riptide" src={riptidePic} />
-                </div>
-                <div className="team-info">
-                  <div className="team-title">CI Riptide</div>
-                  <div className="team-extra">First travel season</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <HockeyTimeline />
+
         <div className="lesson-section">
-          <div id="calendar-section">
-            <h3 id="lesson-booking-header">Book a lesson!</h3>
-            <h3 id="lesson-disclaimer">
-              Lessons are only shown up to 2 weeks in advance.
-            </h3>
-            <InlineWidget
-              id="cal"
-              styles={{
-                height: 700,
-                margin: 0,
-                padding: 0,
-              }}
-              pageSettings={{
-                hideGdprBanner: true,
-
-                backgroundColor: "#171717",
-                hideEventTypeDetails: false,
-                hideLandingPageDetails: false,
-                primaryColor: "00a2ff",
-                textColor: "DDDDDD",
-              }}
-              url="https://calendly.com/ellisodowd/private-hockey-lesson"
-            />
-            {/* <div className="under-lesson">
-              <div className="team-extra">*All lessons are in the AM</div>
-              <div className="team-extra">
-                Feel free to text me at{" "}
-                <span className="underline">(805)722-2603</span>
-              </div>
-            </div> */}
-          </div>
-        </div>
-      </div>
-      <div id="hockey-game-schedule">
-        {/* <div className="game-text-holder">
-          <div>
-            <h3>Want to catch a game?</h3>
-            <a
-              href="https://maps.app.goo.gl/7chv8S4qtGxjGzddA"
-              className="location-text underline"
-            >
-              Tahoe Blue Event Center 📍
-            </a>
-          </div>
-
-          <img id="lakers-schedule" src={lakeshowTahoeBlue} />
-        </div> */}
-        <div className="rates-and-payment">
-          <table id="rate-table">
-            <caption className="table-title">Rates</caption>
-            <tr>
-              <th>Players</th>
-              <th>Price</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>$80</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>$50</td>
-            </tr>
-            <tr>
-              <td>3+</td>
-              <td>$40</td>
-            </tr>
-          </table>
-          <div id="payment-section">
-            <div className="table-title">Payment options</div>
-            <div className="payment-option" id="option1">
-              <a href="https://www.venmo.com/u/Ellis-ODowd">
-                {" "}
-                <img id="venmo" src={venmoLogo} />
-              </a>
-              <a
-                className="payment-link"
-                href="https://www.venmo.com/u/Ellis-ODowd"
-              >
-                @Ellis-ODowd
-              </a>
+          <div id="lesson-columns">
+            <div className="lesson-column" id="hockey-column">
+              <PopupButton
+                className="lesson-button"
+                url="https://calendly.com/ellisodowd/hockey-lesson"
+                rootElement={document.getElementById("root")}
+                text="Schedule a hockey lesson"
+                textColor="#ffffff"
+                olor="#00a2ff"
+              />
+              <table id="rate-table">
+                <caption className="table-title">Lesson rates (all)</caption>
+                <tr>
+                  <th>Players</th>
+                  <th>Price</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>$80</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>$50</td>
+                </tr>
+                <tr>
+                  <td>3+</td>
+                  <td>$40</td>
+                </tr>
+              </table>
             </div>
-            <div className="payment-option">
-              <a href="https://www.venmo.com/u/Ellis-ODowd">
-                {" "}
-                <img id="zelle" src={zelleLogo} />
-              </a>
-              <a className="payment-link" href="https://zellepay.com">
-                (805)722-2603
-              </a>
+            <div className="lesson-column">
+              <PopupButton
+                className="lesson-button"
+                url="https://calendly.com/riptideellis/skating-lesson"
+                /*
+                 * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+                 * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+                 */
+                rootElement={document.getElementById("root")}
+                text="Schedule a skating lesson"
+                textColor="#ffffff"
+                color="#00a2ff"
+                styles={{
+                  backgroundColor: "#FFFDE7",
+                  color: "#000000",
+                }}
+              />
+              <div id="payment-section">
+                <div className="table-title">Payment options</div>
+                <div className="payment-option" id="option1">
+                  <a href="https://www.venmo.com/u/Ellis-ODowd">
+                    {" "}
+                    <img id="venmo" src={venmoLogo} />
+                  </a>
+                  <a
+                    className="payment-link"
+                    href="https://www.venmo.com/u/Ellis-ODowd"
+                  >
+                    @Ellis-ODowd
+                  </a>
+                </div>
+                <div className="payment-option">
+                  <a href="https://www.venmo.com/u/Ellis-ODowd">
+                    {" "}
+                    <img id="zelle" src={zelleLogo} />
+                  </a>
+                  <a className="payment-link" href="https://zellepay.com">
+                    (805)722-2603
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="rates-and-payment"></div>
+          <div id="hockey-game-schedule">
+            <div className="game-text-holder">
+              <div>
+                <h3 className="table-title">Want to catch a game?</h3>
+                {/* <a
+                href="https://maps.app.goo.gl/7chv8S4qtGxjGzddA"
+                className="location-text underline"
+                >
+                Reno ice 📍
+                </a> */}
+              </div>
+
+              <img id="lakers-schedule" src={RIRschedule} />
             </div>
           </div>
         </div>
