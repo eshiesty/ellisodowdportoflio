@@ -204,8 +204,7 @@ const Hockey = () => {
                 url="https://calendly.com/ellisodowd/hockey-lesson"
                 rootElement={document.getElementById("root")}
                 text="Schedule a hockey lesson"
-                textColor="#ffffff"
-                olor="#00a2ff"
+                pageSettings={{ hideGdprBanner: true }}
               />
               <table id="rate-table">
                 <caption className="table-title">Lesson rates (all)</caption>
@@ -231,10 +230,7 @@ const Hockey = () => {
               <PopupButton
                 className="lesson-button"
                 url="https://calendly.com/riptideellis/skating-lesson"
-                /*
-                 * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
-                 * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
-                 */
+                pageSettings={{ hideGdprBanner: true }}
                 rootElement={document.getElementById("root")}
                 text="Schedule a skating lesson"
                 textColor="#ffffff"
