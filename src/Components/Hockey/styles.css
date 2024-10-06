@@ -11,15 +11,19 @@
   /* height: 100vh; */
   display: flex;
   flex-direction: row;
-  padding-left: 50px;
-  height: 1000px;
+  height: 1050px;
   justify-content: space-between;
   /* height: 100%; */
 }
 #timeline {
   display: flex;
   flex-direction: row;
+  background-color: #0f0f0f;
+  padding-right: 50px;
+  padding-left: 30px;
+  margin: 0;
 }
+
 .nostyle {
   color: none;
 }
@@ -55,28 +59,57 @@
   border-radius: 10px;
   margin-bottom: -40px;
 }
-#calendar {
-  /* background: linear-gradient(rgb(249, 236, 215), #5d5d5d); */
-  /* background: linear-gradient(rgb(82, 158, 212), #1f1f1f); */
-  width: 100vw;
-  align-self: center;
-  overflow: hidden;
-  border-radius: 20px;
-  height: fit-content;
+/* .lesson-button {
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
+
+.lesson-button:hover {
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); 
+  cursor: pointer;
+} */
+.lesson-button {
+  background-color: #00a2ff;
+  border-radius: 10px;
+  border: none;
+  font-size: 14pt;
+  height: 70px;
+  color: #ffffff;
+  font-family: Poppins;
+  width: 100%;
+  margin: 0;
+  font-weight: bold;
+  cursor: pointer; /* Ensure the cursor changes to pointer */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Initial shadow */
+  transition: 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition for hover effect */
+  scale: 1;
 }
 
-#calendar-section {
+.lesson-button:hover {
+  opacity: 0.7;
+  /* scale: ; */
+}
+.lesson-column {
+  width: 40%;
+  margin: 10px;
   display: flex;
-  width: 70vw;
-  height: 900px;
-
-  /* max-height: 500px; */
-  /* align-items: center; */
   flex-direction: column;
-  flex: 1;
-  margin-left: -50px;
-  margin-right: -100px;
+  align-items: center;
 }
+#lesson-columns {
+  margin: 50px;
+  display: flex;
+  width: 50vw;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* flex: 1; */
+  /* height: fit-content; */
+}
+
 #calendar-section::-webkit-scrollbar {
   display: none;
 }
@@ -148,13 +181,15 @@
   border-width: 5px;
 }
 #hockey-game-schedule {
-  background-color: #1f1f1f;
+  /* width: 110%; */
+  height: 100%;
+  /* background-color: #343434; */
   /* box-shadow: 0px 0px 20px 5px #3d3d3d; */
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+  /* padding-top: 30px; */
+  /* padding-bottom: 30px; */
 }
 .location-text {
   color: #777777;
@@ -170,7 +205,8 @@ td {
 }
 #rate-table {
   /* margin-top: 50px; */
-  width: 250px;
+  /* width: 250px; */
+  width: 100%;
 }
 tr:hover {
   background-color: #272727;
@@ -178,7 +214,7 @@ tr:hover {
 .table-title {
   margin-top: 20px;
 
-  font-size: 18pt;
+  font-size: 14pt;
   font-weight: bold;
   color: #999999;
 }
@@ -270,6 +306,13 @@ tr:hover {
   /* width: 300px; */
   border-image-slice: fill;
 }
+#iceraiders {
+  width: 200px;
+  margin-top: -30px;
+  margin-left: -35px;
+  /* width: 300px; */
+  border-image-slice: fill;
+}
 #islanders {
   height: 150px;
   /* width: 300px; */
@@ -303,7 +346,7 @@ tr:hover {
   align-items: center;
   justify-content: center;
   background-color: #101010;
-  width: 250px;
+  width: 100%;
   height: 120px;
   border-radius: 10px;
 }
@@ -314,7 +357,8 @@ tr:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  width: 100%;
 }
 #venmo {
   width: 200px;
@@ -336,6 +380,14 @@ tr:hover {
   display: none;
 }
 @media (max-width: 780px) {
+  #timeline {
+    padding: 0;
+  }
+  #iceraiders {
+    width: 150px;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
   .hockey-year-holder {
     height: 100px;
     margin-left: 10px;
@@ -429,6 +481,35 @@ tr:hover {
   #hockey-game-schedule {
     flex-direction: column-reverse;
     /* margin-top: 50px; */
+  }
+  #lesson-columns {
+    flex-direction: column;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+  }
+  #rate-table {
+    margin-bottom: 20px;
+  }
+  .lesson-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .lesson-column {
+    width: 90vw;
+    margin: 0;
+  }
+  .lesson-button {
+    width: 90vw;
+  }
+  #skating-lesson-button {
+    /* display: none; */
+    /* background-color: red; */
+  }
+  #hockey-column {
+    margin-bottom: 20px;
+    flex-direction: column-reverse;
   }
   #lakers-schedule {
     width: 90vw;
