@@ -408,6 +408,10 @@ tr:hover {
   #about-me-header {
     margin-top: 100px;
   }
+  #payment-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   #hockey-info-zone {
     flex-direction: column;
     /* margin-left: 20px; */
@@ -490,7 +494,8 @@ tr:hover {
     align-items: center;
   }
   #rate-table {
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 70px;
   }
   .lesson-button {
     margin-top: 20px;
