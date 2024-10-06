@@ -1,6 +1,10 @@
 .hockey-zone {
   /* height: 100vh; */
 }
+#container {
+  min-width: 800px;
+}
+
 .rates-and-payment {
   display: flex;
   flex-direction: row;
@@ -111,7 +115,7 @@
 }
 
 #calendar-section::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 .hockey-team-years {
   display: flex;
@@ -137,7 +141,7 @@
   align-items: center;
 }
 .team-title {
-  font-size: 18pt;
+  font-size: 1rem;
   color: white;
   text-decoration-line: none;
 }
@@ -165,9 +169,10 @@
   /* height: 870px; */
 }
 #cal::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 .lesson-section {
+  min-width: 680px;
   /* margin-right: 4%; */
   /* margin-left: 4%; */
   display: flex;
@@ -374,6 +379,7 @@ tr:hover {
   overflow: hidden;
   height: 150px;
   width: 150px;
+  min-width: 150px;
   border-radius: 70%;
 }
 .hockey-header-holder {
@@ -421,6 +427,7 @@ tr:hover {
   .hockey-image-container {
     height: 100px;
     width: 100px;
+    min-width: 100px;
   }
   #timeline {
     margin-left: 0px;
@@ -531,6 +538,7 @@ tr:hover {
   }
   .lesson-section {
     margin-bottom: 50px;
+    min-width: 100px;
   }
   #lesson-booking-header {
     align-self: center;
@@ -543,5 +551,8 @@ tr:hover {
   .rates-and-payment {
     flex-direction: column;
     width: auto;
+  }
+  #container {
+    min-width: 100px;
   }
 }

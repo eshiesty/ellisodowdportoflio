@@ -54,7 +54,11 @@ const HockeyTimeline = () => {
           <div className="timeline-item">
             <div className="horizontal-line" />
             <div className="hockey-image-container">
-              <img id="iceraiders" src={iceraiders} />
+              <img
+                className="timeline-photo"
+                id="iceraiders"
+                src={iceraiders}
+              />
             </div>
             <div className="team-info">
               <a href="https://www.renoiceraiders.com" className="team-title">
@@ -78,7 +82,11 @@ const HockeyTimeline = () => {
           <div className="timeline-item">
             <div className="horizontal-line" />
             <div className="hockey-image-container">
-              <img id="islanders" src={islandersPic} />
+              <img
+                className="timeline-photo"
+                id="islanders"
+                src={islandersPic}
+              />
             </div>
             <div className="team-info">
               <a
@@ -94,7 +102,11 @@ const HockeyTimeline = () => {
           <div className="timeline-item">
             <div className="horizontal-line" />
             <div className="hockey-image-container">
-              <img id="advantage" src={advantagePic} />
+              <img
+                className="timeline-photo"
+                id="advantage"
+                src={advantagePic}
+              />
             </div>
             <div className="team-info">
               <a
@@ -150,7 +162,7 @@ const Hockey = () => {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
 
   return (
-    <>
+    <div id="container">
       {isMobile ? (
         <div id="hamburger-container">
           <div
@@ -283,7 +295,7 @@ const Hockey = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
