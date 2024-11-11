@@ -2,7 +2,7 @@
   /* height: 100vh; */
 }
 #container {
-  min-width: 800px;
+  /* min-width: 900px; */
 }
 
 .rates-and-payment {
@@ -260,6 +260,7 @@ tr:hover {
 
 #video-holder {
   height: 75vh;
+  width: 100%;
   overflow: hidden;
 }
 #video-touch-blocker {

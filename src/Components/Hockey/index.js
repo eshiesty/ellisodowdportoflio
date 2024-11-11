@@ -244,7 +244,7 @@ const Hockey = () => {
                 url="https://calendly.com/riptideellis/skating-lesson"
                 pageSettings={{ hideGdprBanner: true }}
                 rootElement={document.getElementById("root")}
-                text="Schedule a skating lesson"
+                text="Schedule a powerskating lesson"
                 textColor="#ffffff"
                 color="#00a2ff"
                 styles={{
