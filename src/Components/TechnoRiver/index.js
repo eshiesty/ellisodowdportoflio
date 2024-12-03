@@ -132,6 +132,86 @@ const TechnoRiver = () => {
             <SwiftIcon className="tech-icon" />
             <span className="tooltiptext">Swift</span>
           </div>
+          <div className="tooltip">
+            <ReactIcon className="tech-icon" />
+            <span className="tooltiptext">React</span>
+          </div>
+          <div className="tooltip">
+            <CssIcon className="tech-icon" />
+            <span className="tooltiptext">CSS</span>
+          </div>
+          <div className="tooltip">
+            <HtmlIcon className="tech-icon" />
+            <span className="tooltiptext">HTML</span>
+          </div>
+          <div className="tooltip">
+            <JavaIcon className="tech-icon" />
+            <span className="tooltiptext">Java</span>
+          </div>
+          <div className="tooltip">
+            <JestIcon className="tech-icon" />
+            <span className="tooltiptext">Jest</span>
+          </div>
+          <div className="tooltip">
+            <JsIcon className="tech-icon" />
+            <span className="tooltiptext">JavaScript</span>
+          </div>
+          <div className="tooltip">
+            <MobileIcon className="tech-icon" />
+            <span className="tooltiptext">Mobile</span>
+          </div>
+          <div className="tooltip">
+            <MongoIcon className="tech-icon" />
+            <span className="tooltiptext">MongoDB</span>
+          </div>
+          <div className="tooltip">
+            <NodeIcon className="tech-icon" />
+            <span className="tooltiptext">Node.js</span>
+          </div>
+          <div className="tooltip">
+            <SwiftIcon className="tech-icon" />
+            <span className="tooltiptext">Swift</span>
+          </div>
+          <div className="tooltip">
+            <ReactIcon className="tech-icon" />
+            <span className="tooltiptext">React</span>
+          </div>
+          <div className="tooltip">
+            <CssIcon className="tech-icon" />
+            <span className="tooltiptext">CSS</span>
+          </div>
+          <div className="tooltip">
+            <HtmlIcon className="tech-icon" />
+            <span className="tooltiptext">HTML</span>
+          </div>
+          <div className="tooltip">
+            <JavaIcon className="tech-icon" />
+            <span className="tooltiptext">Java</span>
+          </div>
+          <div className="tooltip">
+            <JestIcon className="tech-icon" />
+            <span className="tooltiptext">Jest</span>
+          </div>
+          <div className="tooltip">
+            <JsIcon className="tech-icon" />
+            <span className="tooltiptext">JavaScript</span>
+          </div>
+          <div className="tooltip">
+            <MobileIcon className="tech-icon" />
+            <span className="tooltiptext">Mobile</span>
+          </div>
+          <div className="tooltip">
+            <MongoIcon className="tech-icon" />
+            <span className="tooltiptext">MongoDB</span>
+          </div>
+          <div className="tooltip">
+            <NodeIcon className="tech-icon" />
+            <span className="tooltiptext">Node.js</span>
+          </div>
+          <div className="tooltip">
+            <SwiftIcon className="tech-icon" />
+            <span className="tooltiptext">Swift</span>
+          </div>
         </div>
         {/* <RiverGroup /> */}
         {/* <RiverGroup /> */}

@@ -44,11 +44,9 @@ const TopNavBar = () => {
             </p>
           </div>
           <p
-            className={`nav-link ${
-              href === "/freelance" ? "selected-nav" : ""
-            }`}
+            className={`nav-link ${href === "/contact" ? "selected-nav" : ""}`}
           >
-            Free lance
+            Contact
           </p>
         </div>
       </div>

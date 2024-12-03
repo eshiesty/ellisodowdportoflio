@@ -1,9 +1,7 @@
 #river-container {
   display: flex;
-  justify-content: center;
   margin-top: 100px;
-  height: fit-content;
-  width: fit-content;
+  max-width: 100%;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
@@ -11,13 +9,9 @@
 
 #river {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   background-color: #353649;
-  padding-top: 0px;
-  padding-bottom: 0px;
   width: 100vw;
-  flex-direction: row;
+  max-width: 100%;
   flex-wrap: nowrap;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -33,7 +27,7 @@
   justify-content: center;
   align-items: center;
   height: 100px;
-  animation: scroll 20s linear infinite;
+  animation: scroll 20s forwards infinite;
   animation-timing-function: linear;
   transition: transform 1s ease-out;
 }

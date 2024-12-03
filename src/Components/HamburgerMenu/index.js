@@ -43,13 +43,6 @@ const HambergerMenu = () => {
               Hockey
             </p>
           </div>
-          <p
-            className={`burger-link ${
-              href === "/freelance" ? "selected-nav" : ""
-            }`}
-          >
-            Free lance
-          </p>
         </div>
       </div>
     </>

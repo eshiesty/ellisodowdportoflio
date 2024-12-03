@@ -8,62 +8,18 @@ import { isMobile } from "react-device-detect";
 import HambergerMenu from "../HamburgerMenu";
 import { TypeAnimation } from "react-type-animation";
 import { ReactComponent as TopBlob } from "../../Assets/TopBlob.svg";
+import { ReactComponent as SideBlob } from "../../Assets/sideblob.svg";
 import headshot from "../../Assets/headshot.webp";
+import aboutraiders from "../../Assets/aboutraiders.webp";
+import aboutlakers from "../../Assets/aboutlakers.webp";
+import viakoologo from "../../Assets/viakoologo.webp";
+import thalogo from "../../Assets/thalogo.webp";
+import ltcc from "../../Assets/ltcc.webp";
+import smartcardlogo from "../../Assets/smartcardlogo.webp";
 import TechnoRiver from "../TechnoRiver";
 
 const Development = () => {
-  let titleArray = [
-    "Mobile developer",
-    "Front end developer",
-    "Full stack developer",
-    "Designer",
-    "Freelancer",
-    "Web developer",
-  ];
-  const navigate = useNavigate();
-  const [title, setTitle] = useState(titleArray[5]);
-  const [titleIndex, setTitleIndex] = useState(0);
-  const [writing, setWriting] = useState(false);
-  const [deleting, setDeleting] = useState(false);
-  const [titleComplete, setTitleComplete] = useState(true);
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
-  // setInterval(() => {
-  //   console.log(title);
-  //   setTitle(title.substring(0, title.length - 1));
-  // }, 500);
-
-  const writeWord = (targetWord) => {
-    setTitle(targetWord);
-
-    if (titleIndex === 5) setTitleIndex(0);
-    setTimeout(() => setDeleting(true), 5000); //should be 5000
-  };
-
-  const getRandSeconds = () => {
-    return Math.random() * 150;
-  };
-  useEffect(() => {
-    setTimeout(() => setDeleting(true), 5000); //should be 5000
-  }, []);
-
-  useEffect(() => {
-    if (deleting) {
-      setTimeout(() => {
-        setTitle(title.substring(0, title.length - 1));
-      }, 150);
-    }
-    if (title === "") {
-      setTitleIndex(titleIndex + 1);
-      setTimeout(() => {
-        setDeleting(false);
-        writeWord(titleArray[titleIndex]);
-      }, 300);
-      if (titleIndex === 5) setTitleIndex(0);
-      setTimeout(() => setDeleting(true), 5000);
-      // setWriting(true);
-    }
-  }, [title, deleting]);
-
   return (
     <>
       <div className="background">
@@ -104,13 +60,13 @@ const Development = () => {
                 "Web developer",
                 3000,
                 "Front end developer",
-                3000,
+                1000,
                 "Full stack developer",
-                3000,
+                1000,
                 "Designer",
-                3000,
+                500,
                 "Freelancer",
-                3000,
+                500,
               ]}
               wrapper="span"
               speed={50}
@@ -132,8 +88,93 @@ const Development = () => {
         </div>
       </div>
       <TechnoRiver />
-      {/* <div id="down-arrows-holder">
-        <HiOutlineChevronDoubleDown id="down-arrows" size={45} />
+      <div className="about-section">
+        <TypeAnimation
+          sequence={[
+            // Same substring at the start will only be typed out once, initially
+            "About me",
+          ]}
+          wrapper="span"
+          speed={10}
+          className="subheader"
+        />
+        <div className="about-text-container">
+          <p>
+            I'm a 21 year old software engineer based in Reno, Nevada. I'm
+            currently in college studying computer science, but this hasn't
+            stopped me from working with companies and individuals to meet their
+            software needs.
+          </p>
+          <p>
+            I love to stay active. I've played Ice Hockey for nearly my entire
+            life (If you're a parent looking to schedule lessons, click{" "}
+            <a href="/hockey">here</a>).
+            <br /> When I'm off the ice, you can expect to find me at the golf
+            course, in the gym, or working on my projects.
+          </p>
+        </div>
+        <img
+          src={aboutlakers}
+          alt="Ellis O'Dowd playing on the Lake Tahoe Lakers"
+          id="about-lakers"
+        />
+        <img
+          src={aboutraiders}
+          alt="Ellis O'Dowd playing on the Reno Ice Raiders"
+          id="about-raiders"
+        />
+      </div>
+      {/* <div id="resume-section">
+        <div id="column-holder">
+          <div className="resume-col">
+            <div className="resume-item">
+              <img
+                src={viakoologo}
+                style={{ width: "100px" }}
+                alt="Viakoo company logo"
+              />
+              <p>Viakoo</p>
+            </div>
+            <div className="resume-item">
+              <div className="resume-photo-holder">
+                <img
+                  src={smartcardlogo}
+                  style={{ height: "100%", width: "100%", objectFit: "cover" }}
+                  alt="Viakoo company logo"
+                />
+              </div>
+              <p>SmartCard Solutions</p>
+            </div>
+          </div>
+          <div className="resume-col">
+            <div className="resume-item">
+              <div className="resume-photo-holder">
+                <img
+                  src={ltcc}
+                  style={{
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                  alt="LTCC logo"
+                />
+              </div>
+              <p>Lake Tahoe Community College</p>
+            </div>
+            <div className="resume-item">
+              <div className="resume-photo-holder">
+                <img
+                  src={thalogo}
+                  style={{ height: "100px" }}
+                  alt="Viakoo company logo"
+                />
+              </div>
+              <p>Tahoe Prep Academy / STHS</p>
+            </div>
+          </div>
+        </div>
+        <div id="side-blob-holder">
+          <SideBlob id="side-blob" />
+        </div>
       </div> */}
     </>
   );
