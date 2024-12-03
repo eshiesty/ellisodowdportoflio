@@ -8,6 +8,7 @@ import AboutMe from "./Components/AboutMe";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Hockey from "./Components/Hockey";
 import ProjectsCollapsable from "./Components/ProjectsCollapsable";
+import Development from "./Components/Development";
 function App() {
   return (
     <Router>
@@ -17,11 +18,12 @@ function App() {
             path="/"
             element={
               <div>
-                <Landing />
+                <Development />
+                {/* <Landing />
                 <Skills />
                 <Links />
-                {/* <Projects /> */}
                 <ProjectsCollapsable />
+                 */}
               </div>
             }
           ></Route>
