@@ -8,6 +8,7 @@ import { isMobile } from "react-device-detect";
 import HambergerMenu from "../HamburgerMenu";
 import { TypeAnimation } from "react-type-animation";
 import { ReactComponent as TopBlob } from "../../Assets/TopBlob.svg";
+import { ReactComponent as MobileTopBlob } from "../../Assets/MobileTopBlob.svg";
 import { ReactComponent as SideBlob } from "../../Assets/sideblob.svg";
 import headshot from "../../Assets/headshot.webp";
 import aboutraiders from "../../Assets/aboutraiders.webp";
@@ -50,6 +51,7 @@ const Development = () => {
         <div className="cover-text-holder">
           <div className="blob-holder">
             <TopBlob className="top-blob" />
+            <MobileTopBlob className="top-blob top-blob-mobile" />
           </div>
           <div className="header-holder">
             <TypeAnimation
@@ -99,13 +101,18 @@ const Development = () => {
           className="subheader"
         />
         <div className="about-text-container">
-          <p>
+          <p className="paragraph">
             I'm a 21 year old software engineer based in Reno, Nevada. I'm
             currently in college studying computer science, but this hasn't
             stopped me from working with companies and individuals to meet their
             software needs.
           </p>
-          <p>
+          <img
+            src={aboutraiders}
+            alt="Ellis O'Dowd playing on the Reno Ice Raiders"
+            id="mobile-raiders"
+          />
+          <p className="paragraph">
             I love to stay active. I've played Ice Hockey for nearly my entire
             life (If you're a parent looking to schedule lessons, click{" "}
             <a href="/hockey">here</a>).
