@@ -113,9 +113,9 @@ const Development = () => {
             id="mobile-raiders"
           />
           <p className="paragraph">
-            I love to stay active. I've played Ice Hockey for nearly my entire
-            life (If you're a parent looking to schedule lessons, click{" "}
-            <a href="/hockey">here</a>).
+            I do anything I can to stay active. I've played Ice Hockey for
+            nearly my entire life. If you're a parent looking to schedule
+            lessons, click <a href="/hockey">here</a>.
             <br /> When I'm off the ice, you can expect to find me at the golf
             course, in the gym, or working on my projects.
           </p>
