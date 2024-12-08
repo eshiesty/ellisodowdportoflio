@@ -83,3 +83,8 @@
 .tooltip:hover .tooltiptext {
   opacity: 1;
 }
+@media (max-width: 780px) {
+  #technologies-text {
+    font-size: 14pt;
+  }
+}

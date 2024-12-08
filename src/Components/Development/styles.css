@@ -168,6 +168,87 @@
   text-decoration-line: underline;
   color: white;
 }
-
+.top-blob {
+  display: block;
+}
+.top-blob-mobile {
+  display: none;
+}
 @media (max-width: 780px) {
+  .about-section {
+    margin: 10px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-text-container {
+    padding: 10px;
+    margin: 0;
+    border-radius: 40px;
+  }
+  .paragraph {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 12pt;
+  }
+  .subheader {
+    font-size: 14pt;
+  }
+  .cover-text-holder {
+    display: flex;
+    align-items: center;
+  }
+  .header-holder {
+    margin: 0;
+  }
+  .name-holder {
+    margin: 0;
+  }
+  .top-blob {
+    display: none;
+  }
+  .top-blob-mobile {
+    /* width: 100vw;
+    height: 100vh; */
+    display: block;
+    /* transform: scaleY(1.6); */
+  }
+  .header {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #fffde7;
+  }
+  .name {
+    font-size: 24pt;
+  }
+  .headshot {
+    width: 180px;
+    height: 180px;
+    /* height: 200px; */
+    border-radius: 50%;
+  }
+  .header-holder {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 500px;
+    justify-content: space-evenly;
+  }
+  #mobile-raiders {
+    width: 100%;
+    border-radius: 20px;
+  }
+  #about-raiders {
+    display: none;
+  }
+  #about-lakers {
+    display: none;
+  }
+
+  .about-text-container {
+    padding: 10px;
+    margin: 0;
+  }
 }
