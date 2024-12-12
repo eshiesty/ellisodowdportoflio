@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 import { MdMenu } from "react-icons/md";
 import TopNavBar from "../TopNavBar";
-import { isMobile } from "react-device-detect";
 import HambergerMenu from "../HamburgerMenu";
 import islandersPic from "../../Assets/is.jpg";
 import advantagePic from "../../Assets/advantage.jpeg";
@@ -21,6 +20,7 @@ import {
   PopupModal,
   PopupWidget,
 } from "react-calendly";
+import NavigationComponent from "../NavigationComponent";
 
 const HockeyTimeline = () => {
   return (
@@ -167,30 +167,7 @@ const Hockey = () => {
 
   return (
     <div id="container">
-      {isMobile ? (
-        <div id="hamburger-container">
-          <div
-            onClick={() => {
-              setHamburgerMenuOpen(!hamburgerMenuOpen);
-              console.log(hamburgerMenuOpen);
-            }}
-            id="hamburger-menu-icon-holder"
-          >
-            <MdMenu size={45} />
-          </div>
-          <div
-            className={`${
-              hamburgerMenuOpen ? "hamburger-menu" : "hamburger-hidden"
-            }`}
-          >
-            <HambergerMenu />
-          </div>
-        </div>
-      ) : (
-        <div className="top-nav-landing-holder">
-          <TopNavBar />
-        </div>
-      )}
+      <NavigationComponent />
       <div className="hockey-zone">
         <div id="video-holder">
           <iframe

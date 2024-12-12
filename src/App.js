@@ -1,31 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Landing from "./Components/Landing";
-import Skills from "./Components/Skills";
-import Links from "./Components/Links";
-import Projects from "./Components/Projects";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Hockey from "./Components/Hockey";
-import ProjectsCollapsable from "./Components/ProjectsCollapsable";
 import Development from "./Components/Development";
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          <Route
-            path="/"
-            element={
-              <div>
-                <Development />
-                {/* <Landing />
-                <Skills />
-                <Links />
-                <ProjectsCollapsable />
-                 */}
-              </div>
-            }
-          ></Route>
+          <Route path="/" element={<Development />}></Route>
           <Route path="/hockey" element={<Hockey />}></Route>
         </Routes>
       </div>

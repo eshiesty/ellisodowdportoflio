@@ -21,31 +21,13 @@ import TechnoRiver from "../TechnoRiver";
 import TechBadges from "../TechBadges";
 import ResumeItem from "../ResumeItem";
 import { ReactComponent as Logo } from "../../Assets/ellislogo.svg";
+import NavigationComponent from "../NavigationComponent";
 const Development = () => {
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
   return (
     <div style={{ overflowX: "hidden" }}>
       <div className="background">
-        <div
-          onClick={() => {
-            setHamburgerMenuOpen(!hamburgerMenuOpen);
-            console.log(hamburgerMenuOpen);
-          }}
-          id="hamburger-menu-icon-holder"
-        >
-          <MdMenu size={45} />
-        </div>
-        <div
-          className={`${
-            hamburgerMenuOpen ? "hamburger-menu" : "hamburger-hidden"
-          }`}
-        >
-          <HambergerMenu />
-        </div>
-        <Logo className="mobile-logo" />
-        <div id="top-nav-landing-holder">
-          <TopNavBar />
-        </div>
+        <NavigationComponent />
         <div className="cover-text-holder">
           <div className="blob-holder">
             <TopBlob className="top-blob" />
