@@ -17,19 +17,7 @@ const HambergerMenu = () => {
               Development
             </p>
           </div>
-          {/* <div
-            onClick={() => {
-              navigate("/aboutme");
-            }}
-          >
-            <p
-              className={`burger-link ${
-                href === "/aboutme" ? "selected-nav" : ""
-              }`}
-            >
-              About me
-            </p>
-          </div> */}
+
           <div
             onClick={() => {
               navigate("/hockey");

@@ -125,7 +125,9 @@ const HockeyTimeline = () => {
               <img id="tahoe" src={tahoePic} />
             </div>
             <div className="team-info">
-              <div className="team-title">Tahoe Prep Academy</div>
+              <a href="http://tahoehockeyacademy.com/" className="team-title">
+                Tahoe Prep Academy
+              </a>
               <div className="team-extra underline">ECEL/NAPHL 18AAA</div>
               <div className="team-extra">Championship</div>
               <div className="team-extra">Captain</div>
@@ -137,7 +139,9 @@ const HockeyTimeline = () => {
               <img id="valencia" src={valenciaPic} />
             </div>
             <div className="team-info">
-              <div className="team-title">Valencia Jr. Flyers</div>
+              <a href="https://www.scflyers.org/" className="team-title">
+                Valencia Jr. Flyers
+              </a>
               <div className="team-extra underline">SCAHA 14AA</div>
               <div className="team-extra">Alternate captain</div>
             </div>
@@ -230,11 +234,11 @@ const Hockey = () => {
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>$60</td>
+                  <td>$50</td>
                 </tr>
                 <tr>
                   <td>3+</td>
-                  <td>$50</td>
+                  <td>$40</td>
                 </tr>
               </table>
             </div>

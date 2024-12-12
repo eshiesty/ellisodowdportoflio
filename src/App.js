@@ -4,7 +4,6 @@ import Landing from "./Components/Landing";
 import Skills from "./Components/Skills";
 import Links from "./Components/Links";
 import Projects from "./Components/Projects";
-import AboutMe from "./Components/AboutMe";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Hockey from "./Components/Hockey";
 import ProjectsCollapsable from "./Components/ProjectsCollapsable";
@@ -27,7 +26,6 @@ function App() {
               </div>
             }
           ></Route>
-          <Route path="/aboutme" element={<AboutMe />}></Route>
           <Route path="/hockey" element={<Hockey />}></Route>
         </Routes>
       </div>

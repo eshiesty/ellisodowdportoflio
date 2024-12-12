@@ -1,0 +1,43 @@
+.resume-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.resume-info {
+  flex-direction: column;
+}
+.company-image {
+  width: 100px;
+}
+.image-holder {
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  display: flex;
+}
+.resume-photo-holder {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the image vertically */
+}
+.name-and-description {
+  font-weight: 500;
+}
+.company-name {
+  text-decoration: underline;
+}
+.position {
+  font-style: italic;
+}
+.date {
+  color: #828392;
+}
+@media (max-width: 780px) {
+  .name-and-description {
+    max-width: 200px;
+  }
+}

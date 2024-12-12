@@ -86,7 +86,6 @@
   font-family: Poppins;
   width: 100%;
   margin: 0;
-  font-weight: bold;
   cursor: pointer; /* Ensure the cursor changes to pointer */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Initial shadow */
   transition: 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition for hover effect */
@@ -141,6 +140,7 @@
   align-items: center;
 }
 .team-title {
+  font-weight: normal;
   font-size: 1rem;
   color: white;
   text-decoration-line: none;
@@ -218,9 +218,8 @@ tr:hover {
 }
 .table-title {
   margin-top: 20px;
-
+  font-weight: normal;
   font-size: 14pt;
-  font-weight: bold;
   color: #999999;
 }
 .InnA6 {
@@ -228,7 +227,6 @@ tr:hover {
 }
 .hockey-header {
   font-size: 18pt;
-  font-weight: bold;
   display: flex;
   /* justify-content: center; */
   margin-left: 100px;

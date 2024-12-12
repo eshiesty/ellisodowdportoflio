@@ -19,19 +19,7 @@ const TopNavBar = () => {
               Software
             </p>
           </div>
-          {/* <div
-            onClick={() => {
-              navigate("/aboutme");
-            }}
-          >
-            <p
-              className={`nav-link ${
-                href === "/aboutme" ? "selected-nav" : ""
-              }`}
-            >
-              About me
-            </p>
-          </div> */}
+
           <div
             onClick={() => {
               navigate("/hockey");
