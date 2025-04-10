@@ -211,7 +211,7 @@ const Hockey = () => {
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>$50</td>
+                  <td>$60</td>
                 </tr>
                 <tr>
                   <td>3+</td>
